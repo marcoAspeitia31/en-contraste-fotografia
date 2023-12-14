@@ -7,9 +7,9 @@
  * @package En_contraste_fotografia
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if ( ! defined( 'EN_CONTRASTE_FOTOGRAFIA_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( 'EN_CONTRASTE_FOTOGRAFIA_VERSION', '1.0.0' );
 }
 
 /**
