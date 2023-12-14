@@ -10,24 +10,58 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	<!--====== PAGE TITLE  PART START ======-->
+
+	<header class="entry-header page-title-area">
+		<div class="section__bg"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="page-title-content text-center">
+						<h1 class="title entry-title"><?php the_title(); ?></h1>
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inicio</a></li>
+								<li class="breadcrumb-item active" aria-current="page"><?php the_title(); ?></li>
+							</ol>
+						</nav>
+						<div class="scroll-to-down">
+							<a href="#entry-content"><i class="fal fa-arrow-down"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!--====== PAGE TITLE  PART ENDS ======-->
 
 	<?php en_contraste_fotografia_post_thumbnail(); ?>
 
-	<div class="entry-content">
-		<?php
-		the_content();
+	<!--====== SINGLE POST PART START ======-->
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'en-contraste-fotografia' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
+	<section class="single-post-area pt-70">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div id="entry-content" class="entry-content mt-30">
+						<?php
+						the_content();
+
+						wp_link_pages(
+							array(
+								'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'en-contraste-fotografia' ),
+								'after'  => '</div>',
+							)
+						);
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====== SINGLE POST PART ENDS ======-->
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
