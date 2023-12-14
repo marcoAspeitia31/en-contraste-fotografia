@@ -1,45 +1,46 @@
-;
 (function ($) {
 
     "use strict";
 
 
-    jQuery(document).on('ready', function () {
+    $(document).on('ready', function () {
+
+        console.log('hola mundo')
 
 
         /*===============================  
              Sticky 
         ================================*/
-        jQuery(window).on('scroll', function (event) {
-            var scroll = jQuery(window).scrollTop();
+        $(window).on('scroll', function (event) {
+            let scroll = $(window).scrollTop();
             if (scroll < 110) {
-                jQuery(".header-nav").removeClass("sticky");
+                $(".header-nav").removeClass("sticky");
             } else {
-                jQuery(".header-nav").addClass("sticky");
+                $(".header-nav").addClass("sticky");
             }
         });
 
         /*===============================  
              Mobile Menu 
         ================================*/
-        jQuery(".navbar-toggler").on('click', function () {
-            jQuery(this).toggleClass('active');
+        $(".navbar-toggler").on('click', function () {
+            $(this).toggleClass('active');
         });
 
-        jQuery(".navbar-nav a").on('click', function () {
-            jQuery(".navbar-toggler").removeClass('active');
+        $(".navbar-nav a").on('click', function () {
+            $(".navbar-toggler").removeClass('active');
         });
-        var subMenu = jQuery(".sub-menu-bar .navbar-nav .sub-menu");
+        let subMenu = $(".sub-menu-bar .navbar-nav .sub-menu");
 
         if (subMenu.length) {
             subMenu.parent('li').children('a').append(function () {
                 return '<button class="sub-nav-toggler"> <i class="fal fa-angle-down"></i> </button>';
             });
 
-            var subMenuToggler = jQuery(".sub-menu-bar .navbar-nav .sub-nav-toggler");
+            let subMenuToggler = $(".sub-menu-bar .navbar-nav .sub-nav-toggler");
 
             subMenuToggler.on('click', function () {
-                jQuery(this).parent().parent().children(".sub-menu").slideToggle();
+                $(this).parent().parent().children(".sub-menu").slideToggle();
                 return false
             });
 
@@ -48,22 +49,22 @@
         /*===============================  
              side menu Project 1
         ================================*/
-        jQuery('.canvas_open').on('click', function () {
-            jQuery('.offcanvas_menu_wrapper,.off_canvars_overlay').addClass('active')
+        $('.canvas_open').on('click', function () {
+            $('.offcanvas_menu_wrapper,.off_canvars_overlay').addClass('active')
         });
 
-        jQuery('.canvas_close,.off_canvars_overlay').on('click', function () {
-            jQuery('.offcanvas_menu_wrapper,.off_canvars_overlay').removeClass('active')
+        $('.canvas_close,.off_canvars_overlay').on('click', function () {
+            $('.offcanvas_menu_wrapper,.off_canvars_overlay').removeClass('active')
         });
 
-        var $offcanvasNav = jQuery('.offcanvas_main_menu'),
+        let $offcanvasNav = $('.offcanvas_main_menu'),
             $offcanvasNavSubMenu = $offcanvasNav.find('.sub-menu');
         $offcanvasNavSubMenu.parent().prepend('<span class="menu-expand"><i class="fa fa-angle-down"></i></span>');
 
         $offcanvasNavSubMenu.slideUp();
 
         $offcanvasNav.on('click', 'li a, li .menu-expand', function (e) {
-            var $this = $(this);
+            let $this = $(this);
             if (($this.parent().attr('class').match(/\b(menu-item-has-children|has-children|has-sub-menu)\b/)) && ($this.attr('href') === '#' || $this.hasClass('menu-expand'))) {
                 e.preventDefault();
                 if ($this.siblings('ul:visible').length) {
@@ -83,38 +84,38 @@
         /*===============================  
              features active
         ================================*/
-        var mousehover = jQuery('.about-2-area');
+        let mousehover = $('.about-2-area');
         mousehover.on('mouseover', '.item', function () {
-            jQuery('.item.active').removeClass('active');
-            jQuery(this).addClass('active');
+            $('.item.active').removeClass('active');
+            $(this).addClass('active');
         });
 
 
         /*===============================  
              Isotope Project 1
         ================================*/
-        var isotope = jQuery('.container');
+        let isotope = $('.container');
         isotope.imagesLoaded(function () {
-            var jQuerygrid = jQuery('.grid').isotope({
+            let $grid = $('.grid').isotope({
                 transitionDuration: '1s',
             });
 
-            var projectfilter = jQuery('.project-menu ul');
+            let projectfilter = $('.project-menu ul');
             projectfilter.on('click', 'li', function () {
-                var filterValue = jQuery(this).attr('data-filter');
-                jQuerygrid.isotope({
+                let filterValue = $(this).attr('data-filter');
+                $grid.isotope({
                     filter: filterValue
                 });
             });
 
-            var projectfilter2 = jQuery('.project-menu ul li');
+            let projectfilter2 = $('.project-menu ul li');
             projectfilter2.on('click', function (event) {
-                jQuery(this).siblings('.active').removeClass('active');
-                jQuery(this).addClass('active');
+                $(this).siblings('.active').removeClass('active');
+                $(this).addClass('active');
                 event.preventDefault();
             });
         });
-        var isotopegrid = jQuery('.grid-2');
+        let isotopegrid = $('.grid-2');
         isotopegrid.isotope({
             itemSelector: '.grid-item',
             percentPosition: true,
@@ -128,25 +129,25 @@
         ================================*/
         function mainSlider() {
 
-            var BasicSlider = jQuery('.hero-slider');
-            var BasicSlider2 = jQuery('.hero-slider-2');
+            let BasicSlider = $('.hero-slider');
+            let BasicSlider2 = $('.hero-slider-2');
 
             BasicSlider.on('init', function (e, slick) {
-                var $firstAnimatingElements = jQuery('.hero-area:first-child').find('[data-animation]');
+                let $firstAnimatingElements = $('.hero-area:first-child').find('[data-animation]');
                 doAnimations($firstAnimatingElements);
             });
             BasicSlider2.on('init', function (e, slick) {
-                var $firstAnimatingElements = jQuery('.hero-14-area:first-child').find('[data-animation]');
+                let $firstAnimatingElements = $('.hero-14-area:first-child').find('[data-animation]');
                 doAnimations($firstAnimatingElements);
             });
 
             BasicSlider.on('beforeChange', function (e, slick, currentSlide, nextSlide) {
-                var $animatingElements = jQuery('.hero-area[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
+                let $animatingElements = $('.hero-area[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
                 doAnimations($animatingElements);
             });
 
             BasicSlider2.on('beforeChange', function (e, slick, currentSlide, nextSlide) {
-                var $animatingElements = jQuery('.hero-14-area[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
+                let $animatingElements = $('.hero-14-area[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
                 doAnimations($animatingElements);
             });
 
@@ -186,11 +187,11 @@
             });
 
             function doAnimations(elements) {
-                var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                let animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
                 elements.each(function () {
-                    var $this = $(this);
-                    var $animationDelay = $this.data('delay');
-                    var $animationType = 'animated ' + $this.data('animation');
+                    let $this = $(this);
+                    let $animationDelay = $this.data('delay');
+                    let $animationType = 'animated ' + $this.data('animation');
                     $this.css({
                         'animation-delay': $animationDelay,
                         '-webkit-animation-delay': $animationDelay
@@ -206,7 +207,7 @@
         /*===============================  
              PORTFOLIO ACTIVE SLICK JS
         ================================*/
-        var Slider1 = jQuery('.portfolio-active');
+        let Slider1 = $('.portfolio-active');
         Slider1.slick({
             arrows: true,
             prevArrow: '<span class="prev"><i class="fal fa-angle-left"></i></span>',
@@ -262,7 +263,7 @@
         /*===============================  
              TESTIMONIAL ACTIVE SLICK JS
         ================================*/
-        var Slider2 = jQuery('.testimonial-active');
+        let Slider2 = $('.testimonial-active');
         Slider2.slick({
             arrows: false,
             dots: true,
@@ -309,7 +310,7 @@
         /*===============================  
              TESTIMONIAL ACTIVE SLICK JS
         ================================*/
-        var Slider3 = jQuery('.testimonial-2-active');
+        let Slider3 = $('.testimonial-2-active');
         Slider3.slick({
             arrows: false,
             dots: true,
@@ -324,7 +325,7 @@
         /*===============================  
              TESTIMONIAL ACTIVE SLICK JS
         ================================*/
-        var Slider4 = jQuery('.testimonial-3-active');
+        let Slider4 = $('.testimonial-3-active');
         Slider4.slick({
             arrows: false,
             dots: true,
@@ -340,7 +341,7 @@
         /*===============================  
              TEAM ACTIVE SLICK JS
         ================================*/
-        var Slider5 = jQuery('.team-active');
+        let Slider5 = $('.team-active');
         Slider5.slick({
             arrows: true,
             prevArrow: '<span class="prev"><i class="fal fa-angle-left"></i></span>',
@@ -393,7 +394,7 @@
         /*===============================  
              TEAM 5 ACTIVE SLICK JS
         ================================*/
-        var Slider6 = jQuery('.team-5-active');
+        let Slider6 = $('.team-5-active');
         Slider6.slick({
             arrows: false,
             dots: true,
@@ -438,7 +439,7 @@
         /*===============================  
              screenshot ACTIVE SLICK JS
         ================================*/
-        var Slider7 = jQuery('.screenshot-active');
+        let Slider7 = $('.screenshot-active');
         Slider7.slick({
             arrows: false,
             dots: true,
@@ -485,7 +486,7 @@
         /*===============================  
              screenshot ACTIVE SLICK JS
         ================================*/
-        var Slider8 = jQuery('.brand-list');
+        let Slider8 = $('.brand-list');
         Slider8.slick({
             arrows: false,
             dots: false,
@@ -530,7 +531,7 @@
         /*===============================  
              screenshot ACTIVE SLICK JS
         ================================*/
-        var Slider9 = jQuery('.service-11-active');
+        let Slider9 = $('.service-11-active');
         Slider9.slick({
             arrows: true,
             prevArrow: '<span class="prev"><i class="fal fa-angle-left"></i></span>',
@@ -580,7 +581,7 @@
         /*===============================  
              client slide  SLICK JS
         ================================*/
-        var Slider10 = jQuery('.client-slide');
+        let Slider10 = $('.client-slide');
         Slider10.slick({
             arrows: false,
             dots: true,
@@ -603,15 +604,15 @@
         /*===============================  
              COUNTER Active
         ================================*/
-        if (jQuery('.count').length) {
-            jQuery('.count').appear(function () {
-                jQuery(this).prop('Counter', 0).animate({
-                    Counter: jQuery(this).text()
+        if ($('.count').length) {
+            $('.count').appear(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
                 }, {
                     duration: 3000,
                     easing: 'swing',
                     step: function (now) {
-                        jQuery(this).text(Math.ceil(now));
+                        $(this).text(Math.ceil(now));
                     }
                 });
             }, {
@@ -622,18 +623,18 @@
         /*===============================  
              PROGRESS LINE Active
         ================================*/
-        if (jQuery('.progress-line').length) {
-            jQuery('.progress-line').appear(function () {
-                var el = jQuery(this);
-                var percent = el.data('width');
-                jQuery(el).css('width', percent + '%');
+        if ($('.progress-line').length) {
+            $('.progress-line').appear(function () {
+                let el = $(this);
+                let percent = el.data('width');
+                $(el).css('width', percent + '%');
             }, {
                 accY: 0
             });
         }
-        if (jQuery('.count-box').length) {
-            jQuery('.count-box').appear(function () {
-                var $t = jQuery(this),
+        if ($('.count-box').length) {
+            $('.count-box').appear(function () {
+                let $t = $(this),
                     n = $t.find(".count-text").attr("data-stop"),
                     r = parseInt($t.find(".count-text").attr("data-speed"), 10);
 
@@ -660,32 +661,14 @@
             });
         }
 
-        /*===============================  
-             Magnific Popup
-        ================================*/
-        var videopopup = jQuery('.video-popup');
-        videopopup.magnificPopup({
-            type: 'iframe'
-        });
 
-
-        /*===============================  
-             Magnific Popup
-        ================================*/
-        var imagepopup = jQuery('.image-popup');
-        imagepopup.magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true
-            }
-        });
         
         /*===============================  
              wow js
         ================================*/
 
         if ($('.wow').length) {
-            var wow = new WOW({
+            let wow = new WOW({
                 boxClass: 'wow', // animated element css class (default is wow)
                 animateClass: 'animated', // animation css class (default is animated)
                 offset: 250, // distance to the element when triggering the animation (default is 0)
@@ -695,37 +678,56 @@
             wow.init();
         }
 
-
-
+         /*===============================  
+            Magnific Popup
+        ================================*/
+        let videopopup = $('.video-popup');
+        videopopup.magnificPopup({
+            type: 'iframe'
+        });
 
 
         /*===============================  
-             Back to top
+                Magnific Popup
         ================================*/
-
-        jQuery(window).on('scroll', function () {
-            if (jQuery(this).scrollTop() > 600) {
-                jQuery('.back-to-top').fadeIn(200)
-            } else {
-                jQuery('.back-to-top').fadeOut(200)
+        let imagepopup = $('.image-popup');
+        imagepopup.magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
             }
-        });
-        jQuery('.back-to-top').on('click', function (event) {
-            jQuery('html, body').animate({
-                scrollTop: 0,
-            }, 1500);
-            event.preventDefault();
         });
 
     });
 
+   
 
-    jQuery(window).on('load', function (event) {
+    /*===============================  
+            Back to top
+    ================================*/
+
+    $(window).on('scroll', function (event) {
+        console.log('bajando del scroll')
+        if ($(this).scrollTop() > 600) {
+            $('.back-to-top').fadeIn(200)
+        } else {
+            $('.back-to-top').fadeOut(200)
+        }
+    });
+    $('.back-to-top').on('click', function (event) {
+        $('html, body').animate({
+            scrollTop: 0,
+        }, 1500);
+        event.preventDefault();
+    });
+
+
+    $(window).on('load', function (event) {
 
         /*===============================  
              Prealoder 
         ================================*/
-        jQuery('.preloader').delay(500).fadeOut(500);
+        $('.preloader').delay(500).fadeOut(500);
     });
 
-})(jQuery);
+})( jQuery );

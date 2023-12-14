@@ -138,6 +138,7 @@ add_action( 'widgets_init', 'en_contraste_fotografia_widgets_init' );
  * Enqueue scripts and styles.
  */
 function en_contraste_fotografia_scripts() {
+	// Styles.
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '4.5.0' );
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css', array(), '5.8.0' );
 	wp_enqueue_style( 'magnific-popup', get_template_directory_uri() . '/assets/css/magnific-popup.css', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION );
@@ -148,6 +149,18 @@ function en_contraste_fotografia_scripts() {
 	wp_enqueue_style( 'en-contraste-fotografia-style', get_stylesheet_uri(), array(), EN_CONTRASTE_FOTOGRAFIA_VERSION );
 	wp_style_add_data( 'en-contraste-fotografia-style', 'rtl', 'replace' );
 
+	// Scripts.
+	//wp_enqueue_script( 'modernizer', get_template_directory_uri() . '/assets/js/vendor/modernizr-3.6.0.min.js', array(), '4.5.0', true );
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '4.5.0', true );
+	wp_enqueue_script( 'popper', get_template_directory_uri() . '/assets/js/popper.min.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
+	wp_enqueue_script( 'jquery-appear', get_template_directory_uri() . '/assets/js/jquery.appear.min.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
+	wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/slick.min.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
+	wp_enqueue_script( 'wow', get_template_directory_uri() . '/assets/js/wow.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
+	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/assets/js/isotope.pkgd.min.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
+	wp_enqueue_script( 'imagesloaded', get_template_directory_uri() . '/assets/js/imagesloaded.pkgd.min.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
+	wp_enqueue_script( 'magnific-popup', get_template_directory_uri() . '/assets/js/magnific-popup.min.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
+	wp_enqueue_script( 'main-scripts', get_template_directory_uri() . '/assets/js/main.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
 	wp_enqueue_script( 'en-contraste-fotografia-navigation', get_template_directory_uri() . '/js/navigation.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
