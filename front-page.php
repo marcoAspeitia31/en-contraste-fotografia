@@ -14,107 +14,6 @@
 
 get_header();
 ?>
-
-    <!--====== HEADER PART START ======-->
-
-    <header class="header-area">
-        <div class="header-nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="navigation">
-                            <nav class="navbar navbar-expand-lg navbar-light ">
-
-                                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a> <!-- logo -->
-
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="toggler-icon"></span>
-                                    <span class="toggler-icon"></span>
-                                    <span class="toggler-icon"></span>
-                                </button> <!-- navbar toggler -->
-
-                                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                    <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="index.html">Home</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.html">Home 1</a></li>
-                                                <li><a href="index-2.html">Home 2</a></li>
-                                                <li><a href="index-3.html">Home 3</a></li>
-                                                <li><a href="index-4.html">Home 4</a></li>
-                                                <li><a href="index-5.html">Home 5</a></li>
-                                                <li><a href="index-6.html">Home 6</a></li>
-                                                <li><a href="index-7.html">Home 7</a></li>
-                                                <li><a href="index-8.html">Home 8</a></li>
-                                                <li><a href="index-9.html">Home 9</a></li>
-                                                <li><a href="index-10.html">Home 10</a></li>
-                                                <li><a href="index-11.html">Home 11</a></li>
-                                                <li><a href="index-12.html">Home 12</a></li>
-                                                <li><a href="index-13.html">Home 13</a></li>
-                                                <li><a href="index-14.html">Home 14</a></li>
-                                                <li><a href="index-15.html">Home 15</a></li>
-                                                <li><a href="index-16.html">Home 16</a></li>
-                                                <li><a href="index-17.html">Home 17</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">About </a>
-                                            <ul class="sub-menu">
-                                                <li><a href="about-1.html">About 1</a></li>
-                                                <li><a href="about-2.html">About 2</a></li>
-                                                <li><a href="about-3.html">About 3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="about.html">Service </a>
-                                            <ul class="sub-menu">
-                                                <li><a href="services-1.html">Services 1</a></li>
-                                                <li><a href="services-2.html">Services 2</a></li>
-                                                <li><a href="services-3.html">Services 3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Pages </a>
-                                            <ul class="sub-menu">
-                                                <li><a href="portfolio-1.html">portfolio 1</a></li>
-                                                <li><a href="portfolio-2.html">portfolio 2</a></li>
-                                                <li><a href="portfolio-3.html">portfolio 3</a></li>
-                                                <li><a href="portfolio-4.html">portfolio 4</a></li>
-                                                <li><a href="portfolio-5.html">portfolio 5</a></li>
-                                                <li><a href="portfolio-details-1.html">portfolio Details 1</a></li>
-                                                <li><a href="portfolio-details-2.html">portfolio Details 2</a></li>
-                                                <li><a href="blog-1.html">Blog 1</a></li>
-                                                <li><a href="blog-2.html">Blog 2</a></li>
-                                                <li><a href="single-post.html">Single Post</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Pricing</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="pricing-1.html">Pricing 1</a></li>
-                                                <li><a href="pricing-2.html">Pricing 2</a></li>
-                                                <li><a href="pricing-3.html">Pricing 3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="contact.html">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div> <!-- navbar collapse -->
-
-                                <div class="navbar-btn d-none d-sm-block">
-                                    <a class="main-btn" href="#">Get Started</a>
-                                </div>
-                            </nav>
-                        </div> <!-- navigation -->
-                    </div>
-                </div> <!-- row -->
-            </div>
-        </div>
-    </header>
-
-    <!--====== HEADER PART ENDS ======-->
-
     <!--====== HERO PART START ======-->
     
     <section class="hero-area">
@@ -123,7 +22,7 @@ get_header();
             <div class="row align-items-center">
                 <div class="col-lg-7">
                     <div class="hero-content">
-                        <img src="assets/images/hero-line.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                         <h1 class="title animated wow fadeInLeft" data-wow-duration="3000ms" data-wow-delay="0ms">Global Leader in Modern Business Innovation</h1>
                         <span class="animated wow fadeInLeft" data-wow-duration="3000ms" data-wow-delay="300ms">With unique business passionate people behind.</span>
                         <a class="main-btn main-btn-2 animated wow fadeInDown" data-wow-duration="3000ms" data-wow-delay="600ms" href="#">Let’s Talk</a>
@@ -253,7 +152,7 @@ get_header();
             <div class="row align-items-center">
                 <div class="col-lg-5">
                     <div class="about-content">
-                        <img src="assets/images/hero-line.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                         <span>About us</span>
                         <h3 class="title">We create mind blowing </h3>
                         <p>Sitting proudly atop is the two-storey penthouse. The nati master bedroom suite is phenomenally spacious makes the most of a its unrivalled position.</p>
@@ -268,10 +167,10 @@ get_header();
                 </div>
                 <div class="col-lg-7">
                     <div class="about-thumb animated wow fadeInRight" data-wow-duration="3000ms" data-wow-delay="0ms">
-                        <img src="assets/images/about-thumb.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/about-thumb.png" alt="">
                         <ul>
                             <li>
-                                <img src="assets/images/about-brand-1.png" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/about-brand-1.png" alt="">
                                 <span>Top Rated</span>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -280,7 +179,7 @@ get_header();
                                 <i class="fas fa-star"></i>
                             </li>
                             <li>
-                                <img src="assets/images/about-brand-2.png" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/about-brand-2.png" alt="">
                                 <span>Our Rated</span>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -289,7 +188,7 @@ get_header();
                                 <i class="fas fa-star"></i>
                             </li>
                             <li>
-                                <img src="assets/images/about-brand-3.png" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/about-brand-3.png" alt="">
                                 <span>Our Rated 5 of 5</span>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -313,7 +212,7 @@ get_header();
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-9">
                     <div class="section-title text-center">
-                        <img src="assets/images/hero-line.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                         <h3 class="title">Our Service</h3>
                         <p>Our focus is on delivering you the absolute best support guiding you through training and providing.</p>
                     </div>
@@ -460,7 +359,7 @@ get_header();
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-9">
                     <div class="section-title text-center">
-                        <img src="assets/images/hero-line.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                         <h3 class="title">Our Portfolio</h3>
                         <p>Our focus is on delivering you the absolute best support guiding you through training and providing.</p>
                     </div>
@@ -471,10 +370,10 @@ get_header();
             <div class="row portfolio-active">
                 <div class="col-lg-3">
                     <div class="portfolio-item mt-30">
-                        <img src="assets/images/portfolio-1.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/portfolio-1.png" alt="">
                         <div class="portfolio-overlay">
                             <div class="content">
-                                <img src="assets/images/hero-line.png" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                                 <h4 class="title">Real design inspiration</h4>
                                 <p>Sitting proudly atop is the storey form bedroom phenomenally.</p>
                             </div>
@@ -483,10 +382,10 @@ get_header();
                 </div>
                 <div class="col-lg-3">
                     <div class="portfolio-item mt-30 mb-30">
-                        <img src="assets/images/portfolio-2.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/portfolio-2.png" alt="">
                         <div class="portfolio-overlay">
                             <div class="content">
-                                <img src="assets/images/hero-line.png" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                                 <h4 class="title">Real design inspiration</h4>
                                 <p>Sitting proudly atop is the storey form bedroom phenomenally.</p>
                             </div>
@@ -495,10 +394,10 @@ get_header();
                 </div>
                 <div class="col-lg-3">
                     <div class="portfolio-item mt-30 mb-30">
-                        <img src="assets/images/portfolio-1.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/portfolio-1.png" alt="">
                         <div class="portfolio-overlay">
                             <div class="content">
-                                <img src="assets/images/hero-line.png" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                                 <h4 class="title">Real design inspiration</h4>
                                 <p>Sitting proudly atop is the storey form bedroom phenomenally.</p>
                             </div>
@@ -507,10 +406,10 @@ get_header();
                 </div>
                 <div class="col-lg-3">
                     <div class="portfolio-item mt-30 mb-30">
-                        <img src="assets/images/portfolio-3.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/portfolio-3.png" alt="">
                         <div class="portfolio-overlay">
                             <div class="content">
-                                <img src="assets/images/hero-line.png" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                                 <h4 class="title">Real design inspiration</h4>
                                 <p>Sitting proudly atop is the storey form bedroom phenomenally.</p>
                             </div>
@@ -519,10 +418,10 @@ get_header();
                 </div>
                 <div class="col-lg-3">
                     <div class="portfolio-item mt-30 mb-30">
-                        <img src="assets/images/portfolio-4.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/portfolio-4.png" alt="">
                         <div class="portfolio-overlay">
                             <div class="content">
-                                <img src="assets/images/hero-line.png" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                                 <h4 class="title">Real design inspiration</h4>
                                 <p>Sitting proudly atop is the storey form bedroom phenomenally.</p>
                             </div>
@@ -531,10 +430,10 @@ get_header();
                 </div>
                 <div class="col-lg-3">
                     <div class="portfolio-item mt-30 mb-30">
-                        <img src="assets/images/portfolio-4.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/portfolio-4.png" alt="">
                         <div class="portfolio-overlay">
                             <div class="content">
-                                <img src="assets/images/hero-line.png" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                                 <h4 class="title">Real design inspiration</h4>
                                 <p>Sitting proudly atop is the storey form bedroom phenomenally.</p>
                             </div>
@@ -554,7 +453,7 @@ get_header();
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-9">
                     <div class="section-title section-title-2 text-center">
-                        <img src="assets/images/hero-line.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                         <h3 class="title">Testimonial</h3>
                         <p>Our focus is on delivering you the absolute best support guiding you through training and providing.</p>
                     </div>
@@ -572,7 +471,7 @@ get_header();
                         </div>
                         <p>There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
                         <div class="info">
-                            <img src="assets/images/testimonial-user.png" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/testimonial-user.png" alt="">
                             <h5 class="title">Abdur Rohman</h5>
                             <span>Sr. Product designer</span>
                         </div>
@@ -589,7 +488,7 @@ get_header();
                         </div>
                         <p>There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
                         <div class="info">
-                            <img src="assets/images/testimonial-user.png" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/testimonial-user.png" alt="">
                             <h5 class="title">Mehedi Hasan</h5>
                             <span>Sr. Product designer</span>
                         </div>
@@ -606,7 +505,7 @@ get_header();
                         </div>
                         <p>There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
                         <div class="info">
-                            <img src="assets/images/testimonial-user.png" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/testimonial-user.png" alt="">
                             <h5 class="title">Mosharof Hossain</h5>
                             <span>Sr. Product designer</span>
                         </div>
@@ -623,7 +522,7 @@ get_header();
                         </div>
                         <p>There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
                         <div class="info">
-                            <img src="assets/images/testimonial-user.png" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/testimonial-user.png" alt="">
                             <h5 class="title">Rayhan Uddin</h5>
                             <span>Sr. Product designer</span>
                         </div>
@@ -640,7 +539,7 @@ get_header();
                         </div>
                         <p>There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
                         <div class="info">
-                            <img src="assets/images/testimonial-user.png" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/testimonial-user.png" alt="">
                             <h5 class="title">Imran Ahmed</h5>
                             <span>Sr. Product designer</span>
                         </div>
@@ -659,20 +558,20 @@ get_header();
             <div class="row">
                 <div class="col-lg-6">
                     <div class="overview-content">
-                        <img src="assets/images/hero-line.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                         <span>overview</span>
                         <h3 class="title">About our company insight</h3>
                         <p>Triplet I award-winning interdisciplinary architectural studio cultural, residential and commercial projects built worldwide. We pride ourselves on being builders creating architectural.</p>
                         <a class="main-btn" href="#">Let’s Chat</a>
                         <div class="brand-item d-flex align-items-center mt-70">
                             <div class="item">
-                                <a href="#"><img src="assets/images/brand-1.png" alt=""></a>
+                                <a href="#"><img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/brand-1.png" alt=""></a>
                             </div>
                             <div class="item">
-                                <a href="#"><img src="assets/images/brand-2.png" alt=""></a>
+                                <a href="#"><img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/brand-2.png" alt=""></a>
                             </div>
                             <div class="item">
-                                <a href="#"><img src="assets/images/brand-3.png" alt=""></a>
+                                <a href="#"><img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/brand-3.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -683,7 +582,7 @@ get_header();
                             <div class="col-lg-6 col-md-6">
                                 <div class="overview-counter-item mt-10 animated wow fadeInUp" data-wow-duration="3000ms" data-wow-delay="0ms">
                                     <div class="icon">
-                                        <img src="assets/images/overview-1.png" alt="">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/overview-1.png" alt="">
                                     </div>
                                     <h3 class="title count">63</h3>
                                     <span>Years of experience</span>
@@ -692,7 +591,7 @@ get_header();
                             <div class="col-lg-6 col-md-6">
                                 <div class="overview-counter-item mt-10 animated wow fadeInUp" data-wow-duration="3000ms" data-wow-delay="300ms">
                                     <div class="icon">
-                                        <img src="assets/images/overview-2.png" alt="">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/overview-2.png" alt="">
                                     </div>
                                     <h3 class="title count">79</h3>
                                     <span>Project taken</span>
@@ -701,7 +600,7 @@ get_header();
                             <div class="col-lg-6 col-md-6">
                                 <div class="overview-counter-item mt-30 animated wow fadeInUp" data-wow-duration="3000ms" data-wow-delay="600ms">
                                     <div class="icon">
-                                        <img src="assets/images/overview-3.png" alt="">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/overview-3.png" alt="">
                                     </div>
                                     <h3 class="title count">27</h3>
                                     <span>Awards won</span>
@@ -710,7 +609,7 @@ get_header();
                             <div class="col-lg-6 col-md-6">
                                 <div class="overview-counter-item mt-30 animated wow fadeInUp" data-wow-duration="3000ms" data-wow-delay="900ms">
                                     <div class="icon">
-                                        <img src="assets/images/overview-4.png" alt="">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/overview-4.png" alt="">
                                     </div>
                                     <h3 class="title"><span class="count">32</span>k</h3>
                                     <span>Twitter followers</span>
@@ -732,7 +631,7 @@ get_header();
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-9">
                     <div class="section-title text-center">
-                        <img src="assets/images/hero-line.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                         <h3 class="title">Our Team</h3>
                         <p>Our focus is on delivering you the absolute best support guiding you through training and providing.</p>
                     </div>
@@ -743,7 +642,7 @@ get_header();
             <div class="row team-active">
                 <div class="col-lg-3">
                     <div class="team-item mt-40 mb-100">
-                        <img src="assets/images/team-1.jpg" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/team-1.jpg" alt="">
                         <div class="team-overlay d-flex align-items-end">
                             <div class="content">
                                 <h4 class="title">Charlotte Emma</h4>
@@ -760,7 +659,7 @@ get_header();
                 </div>
                 <div class="col-lg-3">
                     <div class="team-item mt-40 mb-100">
-                        <img src="assets/images/team-2.jpg" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/team-2.jpg" alt="">
                         <div class="team-overlay d-flex align-items-end">
                             <div class="content">
                                 <h4 class="title">Charlotte Emma</h4>
@@ -777,7 +676,7 @@ get_header();
                 </div>
                 <div class="col-lg-3">
                     <div class="team-item mt-40 mb-100">
-                        <img src="assets/images/team-3.jpg" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/team-3.jpg" alt="">
                         <div class="team-overlay d-flex align-items-end">
                             <div class="content">
                                 <h4 class="title">Charlotte Emma</h4>
@@ -794,7 +693,7 @@ get_header();
                 </div>
                 <div class="col-lg-3">
                     <div class="team-item mt-40 mb-100">
-                        <img src="assets/images/team-4.jpg" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/team-4.jpg" alt="">
                         <div class="team-overlay d-flex align-items-end">
                             <div class="content">
                                 <h4 class="title">Charlotte Emma</h4>
@@ -811,7 +710,7 @@ get_header();
                 </div>
                 <div class="col-lg-3">
                     <div class="team-item mt-40 mb-100">
-                        <img src="assets/images/team-5.jpg" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/team-5.jpg" alt="">
                         <div class="team-overlay d-flex align-items-end">
                             <div class="content">
                                 <h4 class="title">Charlotte Emma</h4>
@@ -828,7 +727,7 @@ get_header();
                 </div>
                 <div class="col-lg-3">
                     <div class="team-item mt-40 mb-100">
-                        <img src="assets/images/team-2.jpg" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/team-2.jpg" alt="">
                         <div class="team-overlay d-flex align-items-end">
                             <div class="content">
                                 <h4 class="title">Charlotte Emma</h4>
@@ -856,7 +755,7 @@ get_header();
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-9">
                     <div class="section-title section-title-2 text-center">
-                        <img src="assets/images/hero-line.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                         <h3 class="title">Pricing Plan</h3>
                         <p>Our focus is on delivering you the absolute best support guiding you through training and providing.</p>
                     </div>
@@ -919,7 +818,7 @@ get_header();
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-9">
                     <div class="section-title text-center">
-                        <img src="assets/images/hero-line.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-line.png" alt="">
                         <h3 class="title">Recent Article</h3>
                         <p>Our focus is on delivering you the absolute best support guiding you through training and providing.</p>
                     </div>
@@ -932,7 +831,7 @@ get_header();
                             <a href="#"><span>The Clear Differene Between Cold Brew & Iced Coffee</span></a>
                         </div>
                         <div class="article-thumb">
-                            <a href="#"><img src="assets/images/article-1.jpg" alt=""></a>
+                            <a href="#"><img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/article-1.jpg" alt=""></a>
                             <div class="date">
                                 <h5 class="title">25</h5>
                                 <span>JUN</span>
@@ -950,7 +849,7 @@ get_header();
                             <a href="#"><span>Your Small Business Success Form marketing </span></a>
                         </div>
                         <div class="article-thumb">
-                            <a href="#"><img src="assets/images/article-2.jpg" alt=""></a>
+                            <a href="#"><img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/article-2.jpg" alt=""></a>
                             <div class="date">
                                 <h5 class="title">25</h5>
                                 <span>JUN</span>
@@ -968,7 +867,7 @@ get_header();
                             <a href="#"><span>The Start-Up Ultimate Guide Make Wordpress Journal.</span></a>
                         </div>
                         <div class="article-thumb">
-                            <a href="#"><img src="assets/images/article-3.jpg" alt=""></a>
+                            <a href="#"><img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/article-3.jpg" alt=""></a>
                             <div class="date">
                                 <h5 class="title">25</h5>
                                 <span>JUN</span>
@@ -985,90 +884,6 @@ get_header();
     </section>
     
     <!--====== ARTICAL PART ENDS ======-->
-
-    <!--====== FOOTER PART START ======-->
-    
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
-                        <div class="footer-logo">
-                            <a href="#"><img src="assets/images/logo.png" alt=""></a>
-                        </div>
-                        <div class="footer-social">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-item">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-about mt-30">
-                            <h4 class="title">Company</h4>
-                            <p>DNP Installations can carry out all maintenance on phone and data and phone points in DNP Installations can carry out all maintenance on phone and data and phone.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="footer-list mt-30 ml-95">
-                            <h4 class="title">Quick links</h4>
-                            <ul>
-                                <li><a href="#">Creative</a></li>
-                                <li><a href="#">General</a></li>
-                                <li><a href="#">Insights</a></li>
-                                <li><a href="#">Tech</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="footer-list mt-30">
-                            <h4 class="title">Categories</h4>
-                            <ul>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Terms and conditions</a></li>
-                                <li><a href="#">Privacy policy</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Contact us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-info mt-30">
-                            <h3 class="title">Categories</h3>
-                            <ul>
-                                <li><i class="fal fa-map-marker-alt"></i> 445 Main Street, New York CA-12325, USA </li>
-                                <li><i class="fal fa-phone"></i> +00 125 456 888 </li>
-                                <li><i class="fal fa-envelope"></i> contact@aball.com </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-copyright">
-                        <p>Copyright @ 2020. Design by Seative.Digital</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <!--====== FOOTER PART ENDS ======-->
-
-    <!--====== BACK TO TOP START ======-->
-
-    <a class="back-to-top">
-        <i class="fal fa-angle-up"></i>
-    </a>
-
-    <!--====== BACK TO TOP ENDS ======-->
 
 	<?php
 	get_footer();

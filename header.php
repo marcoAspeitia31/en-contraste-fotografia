@@ -25,35 +25,50 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'en-contraste-fotografia' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$en_contraste_fotografia_description = get_bloginfo( 'description', 'display' );
-			if ( $en_contraste_fotografia_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $en_contraste_fotografia_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+	<!--====== HEADER PART START ======-->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'en-contraste-fotografia' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+	<header id="masthead" class="header-area site-header">
+		<div class="header-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="navigation">
+							<nav class="navbar navbar-expand-lg navbar-light ">
+
+								<a class="navbar-brand" href="index.html"><img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/logo.png" alt=""></a> <!-- logo -->
+
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="toggler-icon"></span>
+									<span class="toggler-icon"></span>
+									<span class="toggler-icon"></span>
+								</button> <!-- navbar toggler -->
+
+								<?php
+								/**
+								 * Displays a navigation menu.
+								 * 
+								 * @link https://developer.wordpress.org/reference/functions/wp_nav_menu/
+								 */
+								wp_nav_menu( 
+									array(
+										'theme_location' => 'primary-menu',
+										'container_class' => 'collapse navbar-collapse sub-menu-bar',
+										'container_id' => 'navbarSupportedContent',
+										'menu_class' => 'navbar-nav ml-auto',
+										'menu_id' => 'primary-menu'
+									)
+								);
+								?>
+
+								<div class="navbar-btn d-none d-sm-block">
+									<a class="main-btn" href="#">Get Started</a>
+								</div>
+							</nav>
+						</div> <!-- navigation -->
+					</div>
+				</div> <!-- row -->
+			</div>
+		</div>
+	</header>
+
+	<!--====== HEADER PART ENDS ======-->

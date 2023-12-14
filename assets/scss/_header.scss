@@ -463,7 +463,8 @@
 	                margin-right: 0;
 	            }
 
-	            & .nav-item {
+	            & .nav-item,
+				& .menu-item {
 	                position: relative;
 
 	                & a {
