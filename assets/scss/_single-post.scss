@@ -226,12 +226,12 @@
 		& li{
 			display: inline-block;
 			line-height: 36px;
-			background: #F5F5F5;
+			background: $theme-color-3;
 			padding: 0 26px;
 			border-radius: 30px;
 			font-size: 15px;
 			font-weight: 400;
-			color: $black;
+			color: $white;
 			display: flex;
 			align-items: center;
 			margin-right: 15px;
@@ -247,6 +247,9 @@
 			}
 			& img{
 				margin-right: 8px;
+			}
+			& a {
+				color: white;
 			}
 		}
 	}

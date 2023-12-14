@@ -10,15 +10,22 @@
 <div class="col-lg-4 col-md-6 col-sm-9">
 	<div class="article-2-item mt-30">
 		<div class="article-thumb">
-			<?php the_post_thumbnail(); ?>
+			<?php the_post_thumbnail( 'blog-grid' ); ?>
 		</div>
 		<div class="article-content">
 			<div class="date">
 				<div class="item">
-					<h5 class="title">23</h5>
-					<span>JUN</span>
+					<p class="title"><?php echo esc_html( get_the_date( 'd' ) ); ?></p>
+					<span><?php echo esc_html( get_the_date( 'M' ) ); ?></span>
+					<span><?php echo esc_html( get_the_date( 'Y' ) ); ?></span>
 				</div>
-				<span>Financial</span>
+				<?php
+				$categories_list = get_the_category_list( esc_html__( ', ', 'en-contraste-fotografia' ) );
+				if ( $categories_list ) :
+					/* translators: 1: list of categories. */
+					printf( '<span class="cat-links">' . esc_html__( '%1$s', 'en-contraste-fotografia' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				endif;
+				?>
 			</div>
 			<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<a href="<?php the_permalink(); ?>">

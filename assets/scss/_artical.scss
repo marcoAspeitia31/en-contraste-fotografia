@@ -200,15 +200,16 @@
 				left: 0;
 				bottom: 6px;
 				width: 54px;
-				height: 56px;
-				background: linear-gradient(330deg, #ff564f 0%, #fad029 80%);
+				height: 75px;
+				background: $theme-color;
 				text-align: center;
-				padding-top: 8px;
+				padding-top: 5px;
 				border-radius: 5px;
 				& .title{
 					margin-bottom: 0;
 					font-size: 20px;
 					color: $white;
+					font-weight: 600;
 				}
 				& span{
 					font-size: 14px;
@@ -217,6 +218,7 @@
 					display: block;
 					line-height: 22px;
 					margin-top: -6px;
+					text-transform: uppercase;
 				}
 			}
 		}
@@ -276,7 +278,7 @@
 					height: 100%;
 					width: 100%;
 					z-index: -1;
-					background: linear-gradient(330deg, #ff564f 0%, #fad029 80%);
+					background: $theme-color;
 					@include transition(0.3s);
 					border-radius: 50%;
 

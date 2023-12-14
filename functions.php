@@ -31,6 +31,8 @@ function en_contraste_fotografia_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
+	add_image_size( 'blog-grid', 320, 260, true );
+
 	/*
 		* Let WordPress manage the document title.
 		* By adding theme support, we declare that this theme does not use a

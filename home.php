@@ -34,7 +34,7 @@ get_header();
 									</ol>
 								</nav>
 								<div class="scroll-to-down">
-									<a href="#entry-content"><i class="fal fa-arrow-down"></i></a>
+									<a href="#blog-grid-content"><i class="fal fa-arrow-down"></i></a>
 								</div>
 							</div>
 						</div>
@@ -44,7 +44,7 @@ get_header();
 
 			<section class="article-page-area pt-70 pb-100">
 				<div class="container">
-					<div class="row justify-content-center">
+					<div id="blog-grid-content" class="row justify-content-center">
 						<?php	  
 
 						/* Start the Loop */
