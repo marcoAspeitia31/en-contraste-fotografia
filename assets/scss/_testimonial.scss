@@ -104,11 +104,11 @@
 .testimonial-active{
 	& .slick-current{
 		& .testimonial-item{
-			background: #235C51;
+			background: $theme-color-3;
 			& .quote{
 				& svg{
 					& path{
-						fill: $theme-color;
+						fill: $white;
 					}
 				}
 			}

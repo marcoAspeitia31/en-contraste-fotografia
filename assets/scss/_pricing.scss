@@ -35,7 +35,7 @@
 		top: 0;
 		width: 100%;
 		height: 162px;
-		background: #235C51;
+		background: $theme-color-3;
 		border-radius: 10px;
 		z-index: -1;
 	}
@@ -49,7 +49,7 @@
 		display: inline-block;
 		font-size: 18px;
 		font-family: $medium;
-		color: $theme-color;
+		color: $white;
 		padding-bottom: 64px;
 	}
 	& ul{
@@ -80,16 +80,16 @@
 	}
 	& a{
 		width: 100%;
-		border: 1px solid $theme-color-2;
+		border: 1px solid $theme-color;
 		background-color: transparent;
-		color: $theme-color-2;
+		color: $theme-color;
 		text-transform: capitalize;
 		border-radius: 5px;
 		margin-top: 30px;
 		&:hover{
 			background: $theme-color;
 			border-color: $theme-color;
-			color: $black;
+			color: $white;
 		}
 	}
 	&.center{
@@ -100,19 +100,19 @@
 			background: $theme-color;
 		}
 		& .title{
-			color: $black;
+			color: $white;
 		}
 		& span{
-			color: #383838;
+			color: $white;
 		}
 		& a{
 			background: $theme-color;
 			border-color: $theme-color;
-			color: $black;
+			color: $white;
 			&:hover{
-				background-color: transparent;
-				color: $theme-color-2;
-				border-color: $theme-color-2;
+				background-color: $black;
+				color: $white;
+				border-color: $black;
 			}
 		}
 		& .tag{

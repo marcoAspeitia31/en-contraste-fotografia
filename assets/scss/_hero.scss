@@ -680,7 +680,7 @@
 }
 
 .sub-item{
-	background: $theme-color-2;
+	background: $black;
 	padding: 40px 25px 22px;
 	border-radius: 5px;
 	@include transition(0.3s);
@@ -720,7 +720,7 @@
 	}
 	&.active,
 	&:hover{
-		background: $theme-color;
+		background: $theme-color-2;
 		height: 318px;
 		& .title{
 			color: $black;
