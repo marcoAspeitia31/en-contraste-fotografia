@@ -35,7 +35,7 @@
 						<div class="navigation">
 							<nav class="navbar navbar-expand-lg navbar-light ">
 
-								<a class="navbar-brand" href="index.html"><img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/logo.png" alt=""></a> <!-- logo -->
+								<a class="navbar-brand" href="index.html"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.png" alt=""></a> <!-- logo -->
 
 								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 									<span class="toggler-icon"></span>
@@ -51,11 +51,11 @@
 								 */
 								wp_nav_menu( 
 									array(
-										'theme_location' => 'primary-menu',
+										'theme_location'  => 'primary-menu',
 										'container_class' => 'collapse navbar-collapse sub-menu-bar',
-										'container_id' => 'navbarSupportedContent',
-										'menu_class' => 'navbar-nav ml-auto',
-										'menu_id' => 'primary-menu'
+										'container_id'    => 'navbarSupportedContent',
+										'menu_class'      => 'navbar-nav ml-auto',
+										'menu_id'         => 'primary-menu',
 									)
 								);
 								?>

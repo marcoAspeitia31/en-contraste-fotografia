@@ -49,7 +49,7 @@ function en_contraste_fotografia_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'primary-menu' => esc_html__( 'Primary', 'en-contraste-fotografia' ),
+			'primary-menu'   => esc_html__( 'Primary', 'en-contraste-fotografia' ),
 			'secondary-menu' => esc_html__( 'Secondary', 'en-contraste-fotografia' ),
 		)
 	);
@@ -151,7 +151,7 @@ function en_contraste_fotografia_scripts() {
 	wp_style_add_data( 'en-contraste-fotografia-style', 'rtl', 'replace' );
 
 	// Scripts.
-	//wp_enqueue_script( 'modernizer', get_template_directory_uri() . '/assets/js/vendor/modernizr-3.6.0.min.js', array(), '4.5.0', true );
+	// wp_enqueue_script( 'modernizer', get_template_directory_uri() . '/assets/js/vendor/modernizr-3.6.0.min.js', array(), '4.5.0', true );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '4.5.0', true );
 	wp_enqueue_script( 'popper', get_template_directory_uri() . '/assets/js/popper.min.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
