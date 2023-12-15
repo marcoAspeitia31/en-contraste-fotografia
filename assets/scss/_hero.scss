@@ -2115,6 +2115,7 @@
 		font-size: 60px;
 		line-height: 70px;
         text-transform: capitalize;
+		overflow: hidden;
 		@media #{$lg} {
 			font-size: 46px;
 			line-height: 56px;

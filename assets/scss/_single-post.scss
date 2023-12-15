@@ -220,6 +220,7 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		overflow: hidden;
 		@media #{$xs} {
 			flex-wrap: wrap;
 		}
@@ -235,6 +236,10 @@
 			display: flex;
 			align-items: center;
 			margin-right: 15px;
+			&.single-category-list,
+			&.single-tag-list {
+				overflow: hidden;
+			}
 			@media #{$lg} {
 				padding: 0 10px;
 				margin-right: 6px;
@@ -415,7 +420,7 @@
 		}
 		& span{
 			font-size: 14px;
-			font-weight: 500;
+			font-weight: 600;
 			text-transform: uppercase;
 			color: #FFAB4A;
 			letter-spacing: 1px;

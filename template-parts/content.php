@@ -13,23 +13,26 @@
 
 	<?php get_template_part( 'template-parts/generals/posts', 'breadcrumbs' ); ?>
 
-	<?php en_contraste_fotografia_post_thumbnail(); ?>
-
 	<!--====== SINGLE POST PART START ======-->
 
 	<section class="single-post-area pt-70">
 		<div class="container">
-			<div class="row justify-content-center">
+			<div id="entry-content" class="row justify-content-center">
 				<div class="col-lg-8">
 					<div class="single-post-topbar">
 						<ul>
 							<li><i class="far fa-calendar mr-2"></i><?php echo esc_html( the_date( 'F j, Y' ) ); ?></li>
-							<li><i class="fas fa-tags mr-2"></i>
+							<li class="single-category-list" ><i class="fas fa-hashtag"></i>
 								<?php echo get_the_category_list( esc_html__( ', ', 'en-contraste-fotografia' ) );?>
+							</li>
+							<li class="single-tag-list"><i class="fas fa-tags mr-2"></i>
+								<?php echo get_the_tag_list( esc_html__( ', ', 'en-contraste-fotografia' ) ); ?>
 							</li>
 						</ul>
 					</div>
 					<?php
+					en_contraste_fotografia_post_thumbnail();
+
 					the_content(
 						sprintf(
 							wp_kses(
