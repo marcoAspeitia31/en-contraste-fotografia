@@ -10,7 +10,7 @@
 <div class="col-lg-4 col-md-6 col-sm-9">
 	<div class="article-2-item mt-30">
 		<div class="article-thumb">
-			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'blog-grid' ); ?></a>
+			<?php en_contraste_fotografia_post_thumbnail(); ?>
 		</div>
 		<div class="article-content">
 			<div class="date">
