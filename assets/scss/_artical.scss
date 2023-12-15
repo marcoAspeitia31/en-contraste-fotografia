@@ -181,9 +181,10 @@
 	border-radius: 8px;
 	@include transition(0.3s);
 	& .article-thumb{
-		padding: 15px;
+		padding-bottom: 15px;
 		& img{
 			width: 100%;
+			border-radius: 8px 8px 0 0;
 		}
 	}
 	& .article-content{
@@ -191,9 +192,23 @@
 		& .date{
 			position: relative;
 			& > span{
-				padding-left: 70px;
+				margin-left: 70px;
 				display: inline-block;
 				color: $black;
+
+				&.cat-links {
+					display: inline-block;
+					line-height: 36px;
+					background: $theme-color-3;
+					padding: 0 26px;
+					border-radius: 30px;
+					font-size: 15px;
+					font-weight: 400;
+					color: $white;
+					& a{
+						color: $white
+					}
+				}
 			}
 			& .item{
 				position: absolute;

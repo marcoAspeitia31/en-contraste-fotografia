@@ -22,12 +22,19 @@
 					<div class="single-post-topbar">
 						<ul>
 							<li><i class="far fa-calendar mr-2"></i><?php echo esc_html( the_date( 'F j, Y' ) ); ?></li>
-							<li class="single-category-list" ><i class="fas fa-hashtag"></i>
-								<?php echo get_the_category_list( esc_html__( ', ', 'en-contraste-fotografia' ) );?>
-							</li>
-							<li class="single-tag-list"><i class="fas fa-tags mr-2"></i>
-								<?php echo get_the_tag_list( esc_html__( ', ', 'en-contraste-fotografia' ) ); ?>
-							</li>
+							<?php
+							$categories_list = get_the_category_list( esc_html( ', ', 'en-contraste-fotografia' ) );
+
+							if ( $categories_list ) :
+								printf( '<li class="single-category-list" ><i class="fas fa-hashtag mr-2"></i>' . esc_html__( '%1$s', 'en-contraste-fotografia' ) . '</li>', $categories_list );
+							endif;
+
+							$tags_list = get_the_tag_list( esc_html( ', ', 'en-contraste-fotografia' ) );
+
+							if ( $tags_list ) :
+								printf( '<li class="single-tag-list" ><i class="fas fa-tags mr-2"></i>' . esc_html__( '%1$s', 'en-contraste-fotografia' ) . '</li>', $tags_list );
+							endif;
+							?>
 						</ul>
 					</div>
 					<?php
