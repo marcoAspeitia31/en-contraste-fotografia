@@ -766,12 +766,22 @@ textarea {
 	display: block;
 }
 
-.comments-area .comment-list {
+.comments-area .comment-list,
+.comments-area .wp-block-comment-template,
+.wp-block-comments .comment-list,
+.wp-block-comments .wp-block-comment-template {
 	list-style: none;
 	padding: 0;
 }
 
-.comments-area .comment-list .comment .comment-body {
+.comments-area .comment-list .comment .comment-body,
+.comments-area .comment-list .comment > div:first-of-type,
+.comments-area .wp-block-comment-template .comment .comment-body,
+.comments-area .wp-block-comment-template .comment > div:first-of-type,
+.wp-block-comments .comment-list .comment .comment-body,
+.wp-block-comments .comment-list .comment > div:first-of-type,
+.wp-block-comments .wp-block-comment-template .comment .comment-body,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type {
 	padding: 1rem 1.5rem;
 	border-radius: .5rem;
 	border: 1px solid #edebeb;
@@ -783,11 +793,41 @@ textarea {
 				box-shadow: 5px 5px 100px -80px rgba(0,0,0,0.75); */
 }
 
-.comments-area .comment-list .comment .comment-body .reply {
+.comments-area .comment-list .comment .comment-body .reply,
+.comments-area .comment-list .comment .comment-body .wp-block-comment-reply-link,
+.comments-area .comment-list .comment > div:first-of-type .reply,
+.comments-area .comment-list .comment > div:first-of-type .wp-block-comment-reply-link,
+.comments-area .wp-block-comment-template .comment .comment-body .reply,
+.comments-area .wp-block-comment-template .comment .comment-body .wp-block-comment-reply-link,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .reply,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .wp-block-comment-reply-link,
+.wp-block-comments .comment-list .comment .comment-body .reply,
+.wp-block-comments .comment-list .comment .comment-body .wp-block-comment-reply-link,
+.wp-block-comments .comment-list .comment > div:first-of-type .reply,
+.wp-block-comments .comment-list .comment > div:first-of-type .wp-block-comment-reply-link,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .reply,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .wp-block-comment-reply-link,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .reply,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .wp-block-comment-reply-link {
 	text-align: right;
 }
 
-.comments-area .comment-list .comment .comment-body .reply .comment-reply-link {
+.comments-area .comment-list .comment .comment-body .reply .comment-reply-link,
+.comments-area .comment-list .comment .comment-body .wp-block-comment-reply-link .comment-reply-link,
+.comments-area .comment-list .comment > div:first-of-type .reply .comment-reply-link,
+.comments-area .comment-list .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link,
+.comments-area .wp-block-comment-template .comment .comment-body .reply .comment-reply-link,
+.comments-area .wp-block-comment-template .comment .comment-body .wp-block-comment-reply-link .comment-reply-link,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .reply .comment-reply-link,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link,
+.wp-block-comments .comment-list .comment .comment-body .reply .comment-reply-link,
+.wp-block-comments .comment-list .comment .comment-body .wp-block-comment-reply-link .comment-reply-link,
+.wp-block-comments .comment-list .comment > div:first-of-type .reply .comment-reply-link,
+.wp-block-comments .comment-list .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .reply .comment-reply-link,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .wp-block-comment-reply-link .comment-reply-link,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .reply .comment-reply-link,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link {
 	display: inline-block;
 	text-align: center;
 	white-space: nowrap;
@@ -804,18 +844,55 @@ textarea {
 	background-color: #FC2E24;
 }
 
-.comments-area .comment-list .comment .comment-body .reply .comment-reply-link:hover {
+.comments-area .comment-list .comment .comment-body .reply .comment-reply-link:hover,
+.comments-area .comment-list .comment .comment-body .wp-block-comment-reply-link .comment-reply-link:hover,
+.comments-area .comment-list .comment > div:first-of-type .reply .comment-reply-link:hover,
+.comments-area .comment-list .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link:hover,
+.comments-area .wp-block-comment-template .comment .comment-body .reply .comment-reply-link:hover,
+.comments-area .wp-block-comment-template .comment .comment-body .wp-block-comment-reply-link .comment-reply-link:hover,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .reply .comment-reply-link:hover,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link:hover,
+.wp-block-comments .comment-list .comment .comment-body .reply .comment-reply-link:hover,
+.wp-block-comments .comment-list .comment .comment-body .wp-block-comment-reply-link .comment-reply-link:hover,
+.wp-block-comments .comment-list .comment > div:first-of-type .reply .comment-reply-link:hover,
+.wp-block-comments .comment-list .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link:hover,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .reply .comment-reply-link:hover,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .wp-block-comment-reply-link .comment-reply-link:hover,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .reply .comment-reply-link:hover,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link:hover {
 	background-color: transparent;
 	color: #FC2E24;
 }
 
-.comments-area .comment-list .comment .comment-body .reply .comment-reply-link::before {
+.comments-area .comment-list .comment .comment-body .reply .comment-reply-link::before,
+.comments-area .comment-list .comment .comment-body .wp-block-comment-reply-link .comment-reply-link::before,
+.comments-area .comment-list .comment > div:first-of-type .reply .comment-reply-link::before,
+.comments-area .comment-list .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link::before,
+.comments-area .wp-block-comment-template .comment .comment-body .reply .comment-reply-link::before,
+.comments-area .wp-block-comment-template .comment .comment-body .wp-block-comment-reply-link .comment-reply-link::before,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .reply .comment-reply-link::before,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link::before,
+.wp-block-comments .comment-list .comment .comment-body .reply .comment-reply-link::before,
+.wp-block-comments .comment-list .comment .comment-body .wp-block-comment-reply-link .comment-reply-link::before,
+.wp-block-comments .comment-list .comment > div:first-of-type .reply .comment-reply-link::before,
+.wp-block-comments .comment-list .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link::before,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .reply .comment-reply-link::before,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .wp-block-comment-reply-link .comment-reply-link::before,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .reply .comment-reply-link::before,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link::before {
 	font-family: 'Font Awesome 5 Pro';
 	content: '\f3e5';
 	margin-right: 5px;
 }
 
-.comments-area .comment-list .comment .comment-body .comment-meta .edit-link {
+.comments-area .comment-list .comment .comment-body .comment-meta .edit-link,
+.comments-area .comment-list .comment > div:first-of-type .comment-meta .edit-link,
+.comments-area .wp-block-comment-template .comment .comment-body .comment-meta .edit-link,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link,
+.wp-block-comments .comment-list .comment .comment-body .comment-meta .edit-link,
+.wp-block-comments .comment-list .comment > div:first-of-type .comment-meta .edit-link,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .comment-meta .edit-link,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link {
 	color: #fff;
 	background: #FC7A23;
 	transition: all 0.3s ease-out 0s;
@@ -824,37 +901,76 @@ textarea {
 	border-radius: .5rem;
 }
 
-.comments-area .comment-list .comment .comment-body .comment-meta .edit-link::before {
+.comments-area .comment-list .comment .comment-body .comment-meta .edit-link::before,
+.comments-area .comment-list .comment > div:first-of-type .comment-meta .edit-link::before,
+.comments-area .wp-block-comment-template .comment .comment-body .comment-meta .edit-link::before,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link::before,
+.wp-block-comments .comment-list .comment .comment-body .comment-meta .edit-link::before,
+.wp-block-comments .comment-list .comment > div:first-of-type .comment-meta .edit-link::before,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .comment-meta .edit-link::before,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link::before {
 	font-family: 'Font Awesome 5 Pro';
 	content: '\f044';
 	margin-right: 5px;
 }
 
-.comments-area .comment-list .comment .comment-body .comment-meta .edit-link:hover {
+.comments-area .comment-list .comment .comment-body .comment-meta .edit-link:hover,
+.comments-area .comment-list .comment > div:first-of-type .comment-meta .edit-link:hover,
+.comments-area .wp-block-comment-template .comment .comment-body .comment-meta .edit-link:hover,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link:hover,
+.wp-block-comments .comment-list .comment .comment-body .comment-meta .edit-link:hover,
+.wp-block-comments .comment-list .comment > div:first-of-type .comment-meta .edit-link:hover,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .comment-meta .edit-link:hover,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link:hover {
 	background: transparent;
 	border: 2px solid #FC7A23;
 	color: #FC7A23;
 }
 
-.comments-area .comment-list .comment .comment-body .comment-meta .edit-link:hover a {
+.comments-area .comment-list .comment .comment-body .comment-meta .edit-link:hover a,
+.comments-area .comment-list .comment > div:first-of-type .comment-meta .edit-link:hover a,
+.comments-area .wp-block-comment-template .comment .comment-body .comment-meta .edit-link:hover a,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link:hover a,
+.wp-block-comments .comment-list .comment .comment-body .comment-meta .edit-link:hover a,
+.wp-block-comments .comment-list .comment > div:first-of-type .comment-meta .edit-link:hover a,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .comment-meta .edit-link:hover a,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link:hover a {
 	color: #FC7A23;
 }
 
-.comments-area .comment-list .comment .comment-body .comment-meta .edit-link a {
+.comments-area .comment-list .comment .comment-body .comment-meta .edit-link a,
+.comments-area .comment-list .comment > div:first-of-type .comment-meta .edit-link a,
+.comments-area .wp-block-comment-template .comment .comment-body .comment-meta .edit-link a,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link a,
+.wp-block-comments .comment-list .comment .comment-body .comment-meta .edit-link a,
+.wp-block-comments .comment-list .comment > div:first-of-type .comment-meta .edit-link a,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .comment-meta .edit-link a,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link a {
 	color: #fff;
 }
 
-.comments-area .comment-list .comment .comment-body:hover {
+.comments-area .comment-list .comment .comment-body:hover,
+.comments-area .comment-list .comment > div:first-of-type:hover,
+.comments-area .wp-block-comment-template .comment .comment-body:hover,
+.comments-area .wp-block-comment-template .comment > div:first-of-type:hover,
+.wp-block-comments .comment-list .comment .comment-body:hover,
+.wp-block-comments .comment-list .comment > div:first-of-type:hover,
+.wp-block-comments .wp-block-comment-template .comment .comment-body:hover,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type:hover {
 	background: #fff;
 	border-color: #fff;
 	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.comments-area .comment-list .comment .children {
+.comments-area .comment-list .comment .children,
+.comments-area .wp-block-comment-template .comment .children,
+.wp-block-comments .comment-list .comment .children,
+.wp-block-comments .wp-block-comment-template .comment .children {
 	list-style: none;
 }
 
-.comments-area .comment-respond {
+.comments-area .comment-respond,
+.wp-block-comments .comment-respond {
 	background: white;
 	padding: 1.5rem;
 	border: 1px solid #edebeb;
@@ -862,17 +978,20 @@ textarea {
 	transition: all 0.3s ease-out 0s;
 }
 
-.comments-area .comment-respond:hover {
+.comments-area .comment-respond:hover,
+.wp-block-comments .comment-respond:hover {
 	background: #fff;
 	border-color: #fff;
 	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.comments-area .comment-respond .comment-form .comment-form-comment textarea {
+.comments-area .comment-respond .comment-form .comment-form-comment textarea,
+.wp-block-comments .comment-respond .comment-form .comment-form-comment textarea {
 	border: 1px solid #edebeb;
 }
 
-.comments-area .comment-respond .comment-form .form-submit .submit {
+.comments-area .comment-respond .comment-form .form-submit .submit,
+.wp-block-comments .comment-respond .comment-form .form-submit .submit {
 	display: inline-block;
 	text-align: center;
 	white-space: nowrap;
@@ -890,7 +1009,49 @@ textarea {
 	transition: all 0.3s ease-out 0s;
 }
 
-.comments-area .comment-respond .comment-form .form-submit .submit:hover {
+.comments-area .comment-respond .comment-form .form-submit .submit:hover,
+.wp-block-comments .comment-respond .comment-form .form-submit .submit:hover {
+	background-color: transparent;
+	color: #FC2E24;
+}
+
+.wp-block-post-comments-form {
+	background: white;
+	padding: 1.5rem;
+	border: 1px solid #edebeb;
+	border-radius: 5px;
+	transition: all 0.3s ease-out 0s;
+}
+
+.wp-block-post-comments-form:hover {
+	background: #fff;
+	border-color: #fff;
+	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.wp-block-post-comments-form .comment-form .comment-form-comment textarea {
+	border: 1px solid #edebeb;
+}
+
+.wp-block-post-comments-form .comment-form .form-submit .submit {
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	border: 2px solid #FC2E24;
+	padding: 1rem;
+	margin-bottom: 5px;
+	font-size: 16px;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 5;
+	font-weight: 600;
+	background-color: #FC2E24;
+	transition: all 0.3s ease-out 0s;
+}
+
+.wp-block-post-comments-form .comment-form .form-submit .submit:hover {
 	background-color: transparent;
 	color: #FC2E24;
 }

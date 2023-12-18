@@ -20,9 +20,9 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div class="container">
+<div class="container mt-5">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12 px-0">
 			<div id="comments" class="comments-area">
 
 				<?php

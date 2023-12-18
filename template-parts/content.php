@@ -76,10 +76,18 @@
 					<footer class="entry-footer">
 						<?php en_contraste_fotografia_entry_footer( true ); ?>
 					</footer><!-- .entry-footer -->
+
+					<?php
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) :
+
+						comments_template();
+						
+					endif;
+					?>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-8">
-					<div class="single-post-sidebar mt-30">
-					</div>
+					<?php get_sidebar(); ?>
 				</div>
 			</div>
 		</div>
