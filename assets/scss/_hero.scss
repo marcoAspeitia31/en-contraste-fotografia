@@ -2154,10 +2154,11 @@
 			width: 40px;
 			text-align: center;
 			line-height: 40px;
-			background: #E0E0E0;
-			color: #383838;
+			background: transparent;
+			color: $white;
 			font-size: 15px;
 			border-radius: 50%;
+			border: 1px solid $white;
 		}
 	}
 	&.page-title-content-2{

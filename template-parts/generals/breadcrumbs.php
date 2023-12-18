@@ -27,7 +27,7 @@
 				<div class="page-title-content text-center">
 					<h1 class="title entry-title"><?php $is_home ? single_post_title() : the_title(); ?></h1>
 					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb">
+						<ol class="breadcrumb justify-content-center">
 							<li class="breadcrumb-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inicio</a></li>
 							<li class="breadcrumb-item active" aria-current="page"><?php $is_home ? single_post_title() : the_title(); ?></li>
 						</ol>

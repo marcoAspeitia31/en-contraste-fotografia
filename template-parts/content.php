@@ -20,10 +20,8 @@
 			<div id="entry-content" class="row justify-content-center">
 				<div class="col-lg-8">
 					<div class="single-post-topbar">
-						<ul>
-							<li><i class="far fa-calendar mr-2"></i><?php echo esc_html( the_date( 'F j, Y' ) ); ?></li>
-							<?php en_contraste_fotografia_entry_footer( false ); ?>
-						</ul>
+						<span><i class="far fa-calendar mr-2"></i><?php echo esc_html( the_date( 'F j, Y' ) ); ?></span>
+						<?php en_contraste_fotografia_entry_footer( false ); ?>
 					</div>
 					<?php
 					en_contraste_fotografia_post_thumbnail();
@@ -76,9 +74,7 @@
 					</div>
 
 					<footer class="entry-footer">
-						<ul>
-							<?php en_contraste_fotografia_entry_footer( true ); ?>
-						</ul>
+						<?php en_contraste_fotografia_entry_footer( true ); ?>
 					</footer><!-- .entry-footer -->
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-8">

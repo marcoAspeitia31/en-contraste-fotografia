@@ -207,49 +207,39 @@
 	margin-bottom: 5px;
 	@media #{$xs} {
 		display: block;
+		flex-wrap: wrap;
 	}
-	& ul{
+	& span{
+		display: inline-block;
+		line-height: 36px;
+		background: $theme-color-3;
+		padding: 0 26px;
+		border-radius: 30px;
+		font-size: 15px;
+		font-weight: 400;
+		color: $white;
 		display: flex;
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		overflow: hidden;
-		@media #{$xs} {
-			flex-wrap: wrap;
+		align-items: center;
+		margin-right: 15px;
+		&.single-category-list,
+		&.single-tag-list {
+			overflow: hidden;
 		}
-		& li,
-		& span{
-			display: inline-block;
-			line-height: 36px;
-			background: $theme-color-3;
-			padding: 0 26px;
-			border-radius: 30px;
-			font-size: 15px;
-			font-weight: 400;
-			color: $white;
-			display: flex;
-			align-items: center;
-			margin-right: 15px;
-			&.single-category-list,
-			&.single-tag-list {
-				overflow: hidden;
-			}
-			@media #{$lg} {
-				padding: 0 10px;
-				margin-right: 6px;
-			}
-			@media #{$md} {
-				margin-right: 7px;
-			}
-			@media #{$xs} {
-				margin-top: 5px;
-			}
-			& img{
-				margin-right: 8px;
-			}
-			& a {
-				color: white;
-			}
+		@media #{$lg} {
+			padding: 0 10px;
+			margin-right: 6px;
+		}
+		@media #{$md} {
+			margin-right: 7px;
+		}
+		@media #{$xs} {
+			margin-top: 5px;
+		}
+		& img{
+			margin-right: 8px;
+		}
+		& a {
+			color: white;
 		}
 	}
 	& .social{
@@ -271,6 +261,28 @@
 						color: $black;
 					}
 				}
+			}
+		}
+	}
+
+	& .edit-link {
+		background: $theme-color;
+		transition: all 0.3s ease-out 0s;
+		display: inline-flex;
+
+		&::before {
+			font-family: 'Font Awesome 5 Pro';
+			content: '\f044';
+			margin-right: 5px;
+		}
+
+		&:hover {
+			background: transparent;
+			border: 2px solid $theme-color;
+			color: $theme-color;
+
+			a {
+				color: $theme-color;
 			}
 		}
 	}
@@ -411,13 +423,13 @@
 			transform: translateY(-50%);
 			width: 5px;
 			height: 100%;
-			background: #E0E0E0;
+			background: $theme-color;
 		}
 		& span{
 			font-size: 14px;
 			font-weight: 600;
 			text-transform: uppercase;
-			color: #FFAB4A;
+			color: $theme-color;
 			letter-spacing: 1px;
 		}
 		& a{
@@ -546,3 +558,27 @@
 	 }
 }
 
+.wp-block-quote{
+	position: relative;
+	padding-left: 38px;
+	font-size: 18px;
+	font-weight: 500;
+	padding-right: 7px;
+	margin: 1rem 1.5rem;
+	@media #{$xs} {
+		font-size: 15px;
+		padding-left: 20px;
+		padding-right: 0;
+	}
+	&::before{
+		position: absolute;
+		content: '';
+		content: '';
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 5px;
+		height: 100%;
+		background: $theme-color;
+	}
+}

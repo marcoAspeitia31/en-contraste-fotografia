@@ -44,26 +44,24 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<ul>
-							<?php
-							edit_post_link(
-								sprintf(
-									wp_kses(
-										/* translators: %s: Name of current post. Only visible to screen readers */
-										__( 'Edit <span class="screen-reader-text">%s</span>', 'en-contraste-fotografia' ),
-										array(
-											'span' => array(
-												'class' => array(),
-											),
-										)
-									),
-									wp_kses_post( get_the_title() )
+						<?php
+						edit_post_link(
+							sprintf(
+								wp_kses(
+									/* translators: %s: Name of current post. Only visible to screen readers */
+									__( 'Edit <span class="screen-reader-text">%s</span>', 'en-contraste-fotografia' ),
+									array(
+										'span' => array(
+											'class' => array(),
+										),
+									)
 								),
-								'<span class="edit-link">',
-								'</span>'
-							);
-							?>
-						</ul>
+								wp_kses_post( get_the_title() )
+							),
+							'<span class="edit-link">',
+							'</span>'
+						);
+						?>
 					</div>
 				</div>
 			</div>
