@@ -43,7 +43,7 @@ get_header();
 						endwhile;
 
 						?>
-						<div class="col-12">
+						<div class="col-12 mt-3">
 							<?php the_posts_navigation(); ?>
 						</div>
 					</div>

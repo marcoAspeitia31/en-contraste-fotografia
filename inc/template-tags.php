@@ -65,14 +65,14 @@ if ( ! function_exists( 'en_contraste_fotografia_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'en-contraste-fotografia' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'en-contraste-fotografia' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<span class="single-category-list" ><i class="fas fa-hashtag mr-2"></i>' . esc_html__( '%1$s', 'en-contraste-fotografia' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'en-contraste-fotografia' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'en-contraste-fotografia' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<span class="single-tag-list" ><i class="fas fa-tags mr-2"></i>' . esc_html__( '%1$s', 'en-contraste-fotografia' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 

@@ -5,16 +5,8 @@
     22.SINGLE POST css 
 ===========================*/
 
-
-
-
-
-
-
-
-
 .single-post-area{
-	padding-bottom: 100px;
+	padding-bottom: 2rem;
 }
 
 
@@ -209,7 +201,8 @@
 }
 
 
-.single-post-topbar{
+.single-post-topbar,
+.entry-footer {
 	display: flex;
 	margin-bottom: 5px;
 	@media #{$xs} {
@@ -224,7 +217,8 @@
 		@media #{$xs} {
 			flex-wrap: wrap;
 		}
-		& li{
+		& li,
+		& span{
 			display: inline-block;
 			line-height: 36px;
 			background: $theme-color-3;
@@ -281,6 +275,7 @@
 		}
 	}
 }
+
 
 
 .post-thumb{

@@ -5,3 +5,94 @@
 .bypostauthor {
 	display: block;
 }
+.comments-area {
+	.comment-list {
+		list-style: none;
+		padding: 0;
+	
+		.comment {
+			.comment-body {
+				padding: 1rem 1.5rem;
+				border-radius: .5rem;
+				border: 1px solid #edebeb;
+				background: #fff;
+				margin-bottom: 10px;
+				/* -webkit-box-shadow: 5px 5px 100px -80px rgba(0,0,0,0.75);
+				-moz-box-shadow: 5px 5px 100px -80px rgba(0,0,0,0.75);
+				box-shadow: 5px 5px 100px -80px rgba(0,0,0,0.75); */
+				.reply{
+					text-align: right;
+					.comment-reply-link{
+						display: inline-block;
+						text-align: center;
+						white-space: nowrap;
+						vertical-align: middle;
+						border: 2px solid $theme-color;
+						padding: 5px 10px;
+						margin-bottom: 5px;
+						font-size: 16px;
+						border-radius: 3px;
+						color: #fff;
+						cursor: pointer;
+						z-index: 5;
+						font-weight: 600;
+						background-color: $theme-color;
+						
+						&:hover{
+							background-color: transparent;
+							color: $theme-color;
+						}
+						
+						&::before {
+							font-family: 'Font Awesome 5 Pro';
+							content: '\f3e5';
+							margin-right: 5px;
+						}
+					}
+				}
+			}
+	
+			.children {
+				list-style: none;
+			}
+		}
+		
+	}
+	.comment-respond {
+		background: white;
+		padding: 1.5rem;
+		/* -webkit-box-shadow: 5px 5px 100px -80px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 5px 100px -80px rgba(0,0,0,0.75);
+		box-shadow: 5px 5px 100px -80px rgba(0,0,0,0.75); */
+		border: 1px solid #edebeb;
+		border-radius: 5px;
+
+		.comment-form {
+			.form-submit {
+				.submit {
+					display: inline-block;
+					text-align: center;
+					white-space: nowrap;
+					vertical-align: middle;
+					border: 2px solid $theme-color;
+					padding: 1rem;
+					margin-bottom: 5px;
+					font-size: 16px;
+					border-radius: 3px;
+					color: #fff;
+					cursor: pointer;
+					z-index: 5;
+					font-weight: 600;
+					background-color: $theme-color;
+					transition: all 0.3s ease-out 0s;
+
+					&:hover{
+						background-color: transparent;
+						color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+}
+

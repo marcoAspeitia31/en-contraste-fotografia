@@ -13,7 +13,7 @@
             -ms-user-select: none;
             user-select: none;
             border: 2px solid $theme-color;
-            padding: 0 36px;
+            padding: 0 20px;
             font-size: 16px;
             line-height: 54px;
             border-radius: 3px;
@@ -23,6 +23,11 @@
             font-weight: 600;
             background-color: $theme-color;
             font-family: $semibold;
+
+            &:hover{
+                background-color: transparent;
+                color: $theme-color;
+            }
         }
 	}
 

@@ -29,11 +29,12 @@
 								printf( '<li class="single-category-list" ><i class="fas fa-hashtag mr-2"></i>' . esc_html__( '%1$s', 'en-contraste-fotografia' ) . '</li>', $categories_list );
 							endif;
 
-							$tags_list = get_the_tag_list( esc_html( ', ', 'en-contraste-fotografia' ) );
-
-							if ( $tags_list ) :
-								printf( '<li class="single-tag-list" ><i class="fas fa-tags mr-2"></i>' . esc_html__( '%1$s', 'en-contraste-fotografia' ) . '</li>', $tags_list );
-							endif;
+							/* translators: used between list items, there is a space after the comma */
+							$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'en-contraste-fotografia' ) );
+							if ( $tags_list ) {
+								/* translators: 1: list of tags. */
+								printf( '<span class="single-tag-list" ><i class="fas fa-tags mr-2"></i>' . esc_html__( '%1$s', 'en-contraste-fotografia' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+							}
 							?>
 						</ul>
 					</div>
@@ -88,7 +89,9 @@
 					</div>
 
 					<footer class="entry-footer">
-						<?php en_contraste_fotografia_entry_footer(); ?>
+						<ul>
+							<?php en_contraste_fotografia_entry_footer(); ?>
+						</ul>
 					</footer><!-- .entry-footer -->
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-8">
