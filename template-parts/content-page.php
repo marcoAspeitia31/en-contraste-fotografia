@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-	<?php get_template_part( 'template-parts/generals/page', 'breadcrumbs' ); ?>
+	<?php get_template_part( 'template-parts/generals/breadcrumbs' ); ?>
 
 	<!--====== SINGLE POST PART START ======-->
 

@@ -18,33 +18,15 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<?php
+
+		get_template_part( 'template-parts/generals/breadcrumbs' );
+
 		if ( have_posts() ) :
 			?>
-			<header class="entry-header page-title-area">
-				<div class="section__bg"></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="page-title-content text-center">
-								<h1 class="title entry-title"><?php single_post_title(); ?></h1>
-								<nav aria-label="breadcrumb">
-									<ol class="breadcrumb">
-										<li class="breadcrumb-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inicio</a></li>
-										<li class="breadcrumb-item active" aria-current="page"><?php single_post_title(); ?></li>
-									</ol>
-								</nav>
-								<div class="scroll-to-down">
-									<a href="#blog-grid-content"><i class="fal fa-arrow-down"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
 
 			<section class="article-page-area pt-70 pb-100">
 				<div class="container">
-					<div id="blog-grid-content" class="row justify-content-center">
+					<div id="entry-content" class="row justify-content-center">
 						<?php	  
 
 						/* Start the Loop */

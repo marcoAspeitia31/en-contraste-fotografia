@@ -10,7 +10,7 @@
 <div class="col-lg-4 col-md-6 col-sm-9">
 	<div class="article-2-item mt-30">
 		<div class="article-thumb">
-			<?php en_contraste_fotografia_post_thumbnail(); ?>
+			<?php en_contraste_fotografia_post_thumbnail( 'blog-grid' ); ?>
 		</div>
 		<div class="article-content">
 			<div class="date">
@@ -23,7 +23,7 @@
 				$categories_list = get_the_category_list( esc_html__( ', ', 'en-contraste-fotografia' ) );
 				if ( $categories_list ) :
 					/* translators: 1: list of categories. */
-					printf( '<span class="cat-links">' . esc_html__( '%1$s', 'en-contraste-fotografia' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					printf( '<span class="cat-links"><i class="fas fa-hashtag mr-2"></i>' . esc_html__( '%1$s', 'en-contraste-fotografia' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				endif;
 				?>
 			</div>

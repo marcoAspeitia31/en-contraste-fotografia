@@ -7,6 +7,8 @@
  * @package En_contraste_fotografia
  */
 
+declare( strict_types = 1 );
+
 if ( ! function_exists( 'en_contraste_fotografia_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
@@ -119,7 +121,7 @@ if ( ! function_exists( 'en_contraste_fotografia_post_thumbnail' ) ) :
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 */
-	function en_contraste_fotografia_post_thumbnail() {
+	function en_contraste_fotografia_post_thumbnail( string $size = 'full') {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
 		}
@@ -128,7 +130,7 @@ if ( ! function_exists( 'en_contraste_fotografia_post_thumbnail' ) ) :
 			?>
 
 			<div class="post-thumbnail my-3">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail( $size ); ?>
 			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>
@@ -136,7 +138,7 @@ if ( ! function_exists( 'en_contraste_fotografia_post_thumbnail' ) ) :
 			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
 					the_post_thumbnail(
-						'post-thumbnail',
+						$size,
 						array(
 							'alt' => the_title_attribute(
 								array(
@@ -162,4 +164,26 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 	function wp_body_open() {
 		do_action( 'wp_body_open' );
 	}
+endif;
+
+if ( ! function_exists( 'en_contraste_fotografia_featured_image_bg' ) ) :
+
+	function en_contraste_fotografia_featured_image_bg( string $post_thumbnail_url = '' ) {
+
+		if ( $post_thumbnail_url ):
+
+			?>
+			<style type="text/css">
+				.page-title-area .section__bg {
+					background-image: url('<?php echo esc_url( $post_thumbnail_url ) ?>');
+				}
+			</style>
+			<?php
+
+		endif;
+
+	}
+	add_action( 'wp_head', 'en_contraste_fotografia_featured_image_bg' );
+
+
 endif;
