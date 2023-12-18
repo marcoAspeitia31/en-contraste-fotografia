@@ -58,7 +58,7 @@ if ( ! function_exists( 'en_contraste_fotografia_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
-	function en_contraste_fotografia_entry_footer() {
+	function en_contraste_fotografia_entry_footer( bool $is_footer ) {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
@@ -95,22 +95,25 @@ if ( ! function_exists( 'en_contraste_fotografia_entry_footer' ) ) :
 			echo '</span>';
 		}
 
-		edit_post_link(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'en-contraste-fotografia' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
+		if ( $is_footer ) {
+			edit_post_link(
+				sprintf(
+					wp_kses(
+						/* translators: %s: Name of current post. Only visible to screen readers */
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'en-contraste-fotografia' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					),
+					wp_kses_post( get_the_title() )
 				),
-				wp_kses_post( get_the_title() )
-			),
-			'<span class="edit-link">',
-			'</span>'
-		);
+				'<span class="edit-link">',
+				'</span>'
+			);
+		}
+	
 	}
 endif;
 

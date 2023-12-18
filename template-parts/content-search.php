@@ -30,6 +30,6 @@
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php en_contraste_fotografia_entry_footer(); ?>
+		<?php en_contraste_fotografia_entry_footer( false ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
