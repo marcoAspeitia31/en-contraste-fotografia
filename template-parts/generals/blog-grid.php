@@ -7,7 +7,7 @@
  * @package En_contraste_fotografia
  */
 ?>
-<div class="col-lg-4 col-md-6 col-sm-9">
+<div class="col-md-6 col-sm-9">
 	<div class="article-2-item mt-30">
 		<div class="article-thumb">
 			<?php en_contraste_fotografia_post_thumbnail( 'blog-grid' ); ?>

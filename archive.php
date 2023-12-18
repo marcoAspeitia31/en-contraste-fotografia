@@ -21,42 +21,49 @@ get_header();
 
 		get_template_part( 'template-parts/generals/archive', 'breadcrumbs' );
 
-		if ( have_posts() ) :
-			?>
+		?>
 
-			<section class="article-page-area pt-70 pb-100">
+		<section class="article-page-area pt-70 pb-100">
+			<div id="entry-content">
 				<div class="container">
-					<div id="entry-content" class="row justify-content-center">
-						<?php	  
+					<div class="row">
+						<div class="col-md-8">
+							<div class="row">
+								<?php
 
-						/* Start the Loop */
-						while ( have_posts() ) :
-							the_post();
+								if ( have_posts() ) :
 
-							/*
-							* Include the Post-Type-specific template for the content.
-							* If you want to override this in a child theme, then include a file
-							* called content-___.php (where ___ is the Post Type name) and that will be used instead.
-							*/
-							get_template_part( 'template-parts/generals/blog', 'grid' );
+									/* Start the Loop */
+									while ( have_posts() ) :
+										the_post();
 
-						endwhile;
+										/*
+										* Include the Post-Type-specific template for the content.
+										* If you want to override this in a child theme, then include a file
+										* called content-___.php (where ___ is the Post Type name) and that will be used instead.
+										*/
+										get_template_part( 'template-parts/generals/blog', 'grid' );
 
-						?>
-						<div class="col-12 mt-3">
-							<?php the_posts_navigation(); ?>
+									endwhile;
+
+								else :
+
+									get_template_part( 'template-parts/content', 'none' );
+
+								endif;
+								?>
+								<div class="col-12 mt-3">
+									<?php the_posts_navigation(); ?>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<?php get_sidebar();?>
 						</div>
 					</div>
 				</div>
-			</section>
-			<?php
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
+			</div>
+		</section>
 
 	</main><!-- #main -->
 

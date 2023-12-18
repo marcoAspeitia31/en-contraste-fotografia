@@ -57,12 +57,18 @@
 				}
 
 				.comment-meta {
+					.comment-metadata {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+					}
 					& .edit-link {
-						color: $white;
-						background: $theme-color-3;
+						background: transparent;
+						border: 2px solid $theme-color-3;
+						color: $theme-color-3;
 						transition: all 0.3s ease-out 0s;
 						display: inline-flex;
-						padding: 0.3rem 1rem;
+						padding: 0 0.3rem;
 						border-radius: .5rem;
 
 						&::before {
@@ -70,19 +76,9 @@
 							content: '\f044';
 							margin-right: 5px;
 						}
-				
-						&:hover {
-							background: transparent;
-							border: 2px solid $theme-color-3;
-							color: $theme-color-3;
-				
-							a {
-								color: $theme-color-3;
-							}
-						}
 
 						a {
-							color: $white;
+							color: $theme-color-3;
 						}
 					}
 				}
@@ -114,6 +110,19 @@
 		}
 
 		.comment-form {
+			.comment-form-comment,
+			.comment-form-notes,
+			.comment-form-author,
+			.comment-form-email,
+			.comment-form-url {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+
+				& > input {
+					padding: calc(.667em + 2px);
+				}
+			}
 			.comment-form-comment{
 				& textarea {
 					border: 1px solid $color__background-pre;

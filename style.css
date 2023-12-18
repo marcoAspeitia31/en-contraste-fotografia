@@ -579,7 +579,7 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
 	color: #666;
-	border: 1px solid #ccc;
+	border: 1px solid #e6e6e6;
 	border-radius: 3px;
 	padding: 3px;
 }
@@ -604,7 +604,7 @@ textarea:focus {
 }
 
 select {
-	border: 1px solid #ccc;
+	border: 1px solid #e6e6e6;
 }
 
 textarea {
@@ -885,6 +885,19 @@ textarea {
 	margin-right: 5px;
 }
 
+.comments-area .comment-list .comment .comment-body .comment-meta .comment-metadata,
+.comments-area .comment-list .comment > div:first-of-type .comment-meta .comment-metadata,
+.comments-area .wp-block-comment-template .comment .comment-body .comment-meta .comment-metadata,
+.comments-area .wp-block-comment-template .comment > div:first-of-type .comment-meta .comment-metadata,
+.wp-block-comments .comment-list .comment .comment-body .comment-meta .comment-metadata,
+.wp-block-comments .comment-list .comment > div:first-of-type .comment-meta .comment-metadata,
+.wp-block-comments .wp-block-comment-template .comment .comment-body .comment-meta .comment-metadata,
+.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .comment-meta .comment-metadata {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
 .comments-area .comment-list .comment .comment-body .comment-meta .edit-link,
 .comments-area .comment-list .comment > div:first-of-type .comment-meta .edit-link,
 .comments-area .wp-block-comment-template .comment .comment-body .comment-meta .edit-link,
@@ -893,11 +906,12 @@ textarea {
 .wp-block-comments .comment-list .comment > div:first-of-type .comment-meta .edit-link,
 .wp-block-comments .wp-block-comment-template .comment .comment-body .comment-meta .edit-link,
 .wp-block-comments .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link {
-	color: #fff;
-	background: #FC7A23;
+	background: transparent;
+	border: 2px solid #FC7A23;
+	color: #FC7A23;
 	transition: all 0.3s ease-out 0s;
 	display: inline-flex;
-	padding: 0.3rem 1rem;
+	padding: 0 0.3rem;
 	border-radius: .5rem;
 }
 
@@ -914,30 +928,6 @@ textarea {
 	margin-right: 5px;
 }
 
-.comments-area .comment-list .comment .comment-body .comment-meta .edit-link:hover,
-.comments-area .comment-list .comment > div:first-of-type .comment-meta .edit-link:hover,
-.comments-area .wp-block-comment-template .comment .comment-body .comment-meta .edit-link:hover,
-.comments-area .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link:hover,
-.wp-block-comments .comment-list .comment .comment-body .comment-meta .edit-link:hover,
-.wp-block-comments .comment-list .comment > div:first-of-type .comment-meta .edit-link:hover,
-.wp-block-comments .wp-block-comment-template .comment .comment-body .comment-meta .edit-link:hover,
-.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link:hover {
-	background: transparent;
-	border: 2px solid #FC7A23;
-	color: #FC7A23;
-}
-
-.comments-area .comment-list .comment .comment-body .comment-meta .edit-link:hover a,
-.comments-area .comment-list .comment > div:first-of-type .comment-meta .edit-link:hover a,
-.comments-area .wp-block-comment-template .comment .comment-body .comment-meta .edit-link:hover a,
-.comments-area .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link:hover a,
-.wp-block-comments .comment-list .comment .comment-body .comment-meta .edit-link:hover a,
-.wp-block-comments .comment-list .comment > div:first-of-type .comment-meta .edit-link:hover a,
-.wp-block-comments .wp-block-comment-template .comment .comment-body .comment-meta .edit-link:hover a,
-.wp-block-comments .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link:hover a {
-	color: #FC7A23;
-}
-
 .comments-area .comment-list .comment .comment-body .comment-meta .edit-link a,
 .comments-area .comment-list .comment > div:first-of-type .comment-meta .edit-link a,
 .comments-area .wp-block-comment-template .comment .comment-body .comment-meta .edit-link a,
@@ -946,7 +936,7 @@ textarea {
 .wp-block-comments .comment-list .comment > div:first-of-type .comment-meta .edit-link a,
 .wp-block-comments .wp-block-comment-template .comment .comment-body .comment-meta .edit-link a,
 .wp-block-comments .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link a {
-	color: #fff;
+	color: #FC7A23;
 }
 
 .comments-area .comment-list .comment .comment-body:hover,
@@ -983,6 +973,34 @@ textarea {
 	background: #fff;
 	border-color: #fff;
 	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.comments-area .comment-respond .comment-form .comment-form-comment,
+.comments-area .comment-respond .comment-form .comment-form-notes,
+.comments-area .comment-respond .comment-form .comment-form-author,
+.comments-area .comment-respond .comment-form .comment-form-email,
+.comments-area .comment-respond .comment-form .comment-form-url,
+.wp-block-comments .comment-respond .comment-form .comment-form-comment,
+.wp-block-comments .comment-respond .comment-form .comment-form-notes,
+.wp-block-comments .comment-respond .comment-form .comment-form-author,
+.wp-block-comments .comment-respond .comment-form .comment-form-email,
+.wp-block-comments .comment-respond .comment-form .comment-form-url {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.comments-area .comment-respond .comment-form .comment-form-comment > input,
+.comments-area .comment-respond .comment-form .comment-form-notes > input,
+.comments-area .comment-respond .comment-form .comment-form-author > input,
+.comments-area .comment-respond .comment-form .comment-form-email > input,
+.comments-area .comment-respond .comment-form .comment-form-url > input,
+.wp-block-comments .comment-respond .comment-form .comment-form-comment > input,
+.wp-block-comments .comment-respond .comment-form .comment-form-notes > input,
+.wp-block-comments .comment-respond .comment-form .comment-form-author > input,
+.wp-block-comments .comment-respond .comment-form .comment-form-email > input,
+.wp-block-comments .comment-respond .comment-form .comment-form-url > input {
+	padding: calc(.667em + 2px);
 }
 
 .comments-area .comment-respond .comment-form .comment-form-comment textarea,
