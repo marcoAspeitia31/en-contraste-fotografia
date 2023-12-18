@@ -11511,17 +11511,18 @@ p {
   .post-next .prev-post {
     position: relative;
     padding-left: 20px;
-    margin-top: 50px;
+    margin: 50px 0;
     font-size: 20px;
     font-weight: 500;
     color: #000;
-    padding-right: 10px; }
+    padding-right: 10px;
+    overflow: hidden; }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       /* line 480, assets/scss/_single-post.scss */
       .post-next .prev-post {
         padding-left: 10px;
         padding-right: 0; } }
-    /* line 492, assets/scss/_single-post.scss */
+    /* line 493, assets/scss/_single-post.scss */
     .post-next .prev-post::before {
       position: absolute;
       content: '';
@@ -11531,29 +11532,29 @@ p {
       width: 5px;
       height: 100%;
       background: #FC2E24; }
-    /* line 502, assets/scss/_single-post.scss */
+    /* line 503, assets/scss/_single-post.scss */
     .post-next .prev-post span {
       font-size: 14px;
       font-weight: 600;
       text-transform: uppercase;
       color: #FC2E24;
       letter-spacing: 1px; }
-    /* line 509, assets/scss/_single-post.scss */
+    /* line 510, assets/scss/_single-post.scss */
     .post-next .prev-post a {
       color: #000; }
 
-/* line 524, assets/scss/_single-post.scss */
+/* line 525, assets/scss/_single-post.scss */
 .post-form-area {
   padding-top: 90px;
   padding-bottom: 100px; }
 
-/* line 530, assets/scss/_single-post.scss */
+/* line 531, assets/scss/_single-post.scss */
 .post-form-title .title {
   font-size: 30px;
   font-weight: 600;
   color: #000; }
 
-/* line 541, assets/scss/_single-post.scss */
+/* line 542, assets/scss/_single-post.scss */
 .post-form-item .input-box input {
   width: 100%;
   background: #F5F5F5;
@@ -11564,12 +11565,12 @@ p {
   font-size: 16px;
   font-weight: 400;
   color: #000; }
-  /* line 551, assets/scss/_single-post.scss */
+  /* line 552, assets/scss/_single-post.scss */
   .post-form-item .input-box input::placeholder {
     opacity: 1;
     color: #000; }
 
-/* line 556, assets/scss/_single-post.scss */
+/* line 557, assets/scss/_single-post.scss */
 .post-form-item .input-box textarea {
   width: 100%;
   background: #F5F5F5;
@@ -11582,63 +11583,63 @@ p {
   color: #000;
   resize: none;
   padding-top: 15px; }
-  /* line 568, assets/scss/_single-post.scss */
+  /* line 569, assets/scss/_single-post.scss */
   .post-form-item .input-box textarea::placeholder {
     opacity: 1;
     color: #000; }
 
-/* line 573, assets/scss/_single-post.scss */
+/* line 574, assets/scss/_single-post.scss */
 .post-form-item .input-box button {
   background: #FFAB4A;
   font-size: 18px;
   font-weight: 500;
   color: #000; }
 
-/* line 586, assets/scss/_single-post.scss */
+/* line 587, assets/scss/_single-post.scss */
 .post-news {
   margin-top: 97px; }
-  /* line 589, assets/scss/_single-post.scss */
+  /* line 590, assets/scss/_single-post.scss */
   .post-news .post-news-title .title {
     font-size: 30px;
     font-weight: 600; }
-  /* line 595, assets/scss/_single-post.scss */
+  /* line 596, assets/scss/_single-post.scss */
   .post-news .post-news-items .item {
     position: relative;
     margin-left: 70px;
     border-bottom: 1px dashed rgba(56, 56, 56, 0.15);
     color: #000; }
-    /* line 600, assets/scss/_single-post.scss */
+    /* line 601, assets/scss/_single-post.scss */
     .post-news .post-news-items .item span {
       font-size: 18px;
       font-weight: 600;
       color: #000; }
-    /* line 605, assets/scss/_single-post.scss */
+    /* line 606, assets/scss/_single-post.scss */
     .post-news .post-news-items .item img {
       position: absolute;
       left: -70px;
       top: 5px; }
     @media (max-width: 767px) {
-      /* line 611, assets/scss/_single-post.scss */
+      /* line 612, assets/scss/_single-post.scss */
       .post-news .post-news-items .item.item-2 {
         padding-left: 0; } }
-    /* line 615, assets/scss/_single-post.scss */
+    /* line 616, assets/scss/_single-post.scss */
     .post-news .post-news-items .item.item-2 img {
       left: -40px; }
       @media (max-width: 767px) {
-        /* line 615, assets/scss/_single-post.scss */
+        /* line 616, assets/scss/_single-post.scss */
         .post-news .post-news-items .item.item-2 img {
           left: -70px; } }
-    /* line 622, assets/scss/_single-post.scss */
+    /* line 623, assets/scss/_single-post.scss */
     .post-news .post-news-items .item a {
       position: absolute;
       right: 0;
       top: 0;
       color: #FFAB4A; }
-    /* line 628, assets/scss/_single-post.scss */
+    /* line 629, assets/scss/_single-post.scss */
     .post-news .post-news-items .item.item-4 {
       border-bottom: 0; }
 
-/* line 635, assets/scss/_single-post.scss */
+/* line 636, assets/scss/_single-post.scss */
 .wp-block-quote {
   position: relative;
   padding-left: 38px;
@@ -11647,12 +11648,12 @@ p {
   padding-right: 7px;
   margin: 1rem 1.5rem; }
   @media (max-width: 767px) {
-    /* line 635, assets/scss/_single-post.scss */
+    /* line 636, assets/scss/_single-post.scss */
     .wp-block-quote {
       font-size: 15px;
       padding-left: 20px;
       padding-right: 0; } }
-  /* line 647, assets/scss/_single-post.scss */
+  /* line 648, assets/scss/_single-post.scss */
   .wp-block-quote::before {
     position: absolute;
     content: '';

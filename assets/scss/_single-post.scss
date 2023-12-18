@@ -480,11 +480,12 @@
 	& .prev-post{
 		position: relative;
 		padding-left: 20px;
-		margin-top: 50px;
+		margin: 50px 0;
 		font-size: 20px;
 		font-weight: 500;
 		color: $black;
 		padding-right: 10px;
+		overflow: hidden;
 		@media #{$lg} {
 			padding-left: 10px;
 			padding-right: 0;

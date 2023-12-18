@@ -10,32 +10,14 @@
  */
 
 ?>
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'en-contraste-fotografia' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'en-contraste-fotografia' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'en-contraste-fotografia' ), 'en-contraste-fotografia', '<a href="https://devitm.com/">DevITM</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-
-	<!--====== FOOTER PART START ======-->
 	
-	<footer class="footer-area">
+	<footer id="colophon" class="site-footer footer-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
 						<div class="footer-logo">
-							<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.png" alt=""></a>
+							<a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.png" alt=""></a>
 						</div>
 						<div class="footer-social">
 							<ul>
@@ -52,7 +34,7 @@
 				<div class="row">
 					<div class="col-lg-3 col-md-6">
 						<div class="footer-about mt-30">
-							<h4 class="title">Company</h4>
+							<h4 class="title">Acerca de</h4>
 							<p>DNP Installations can carry out all maintenance on phone and data and phone points in DNP Installations can carry out all maintenance on phone and data and phone.</p>
 						</div>
 					</div>
@@ -93,8 +75,16 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="footer-copyright">
-						<p>Copyright @ 2020. Design by Seative.Digital</p>
+					<div class="footer-copyright d-lg-flex justify-content-center justify-content-md-between site-info">
+						<p><?php echo _e( 'Derechos reservados', 'en-contraste-fotografia' ); ?> @<?php bloginfo( ); ?>
+							<?php
+								echo date_i18n(
+									/* translators: Copyright date format, see https://www.php.net/manual/datetime.format.php */
+									_x( 'Y', 'copyright date format', 'en-contraste-fotografia' )
+								);
+							?>
+						</p>
+						<p><?php echo _e( 'Diseño realizado por:', 'en-contraste-fotografia' ); ?> <a href="https://devitm.com/">DevITM</a></p>
 					</div>
 				</div>
 			</div>

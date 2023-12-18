@@ -16,10 +16,7 @@
 			<div class="col-lg-12">
 				<div class="page-title-content text-center">
 					<h1 class="title entry-title">
-					<?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'en-contraste-fotografia' ), '<span>' . get_search_query() . '</span>' );
-					?>
+					<?php echo sprintf( __( '%s Resultados para: ', 'en-contraste-fotografia' ), $wp_query->found_posts ); echo get_search_query(); ?>
 					</h1>
 					<div class="scroll-to-down">
 						<a href="#entry-content"><i class="fal fa-arrow-down"></i></a>
