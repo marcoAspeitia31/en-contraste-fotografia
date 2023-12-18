@@ -42,8 +42,10 @@ get_header();
 
 						endwhile;
 
-						the_posts_navigation();
 						?>
+						<div class="col-12">
+							<?php the_posts_navigation(); ?>
+						</div>
 					</div>
 				</div>
 			</section>

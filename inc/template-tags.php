@@ -121,7 +121,7 @@ if ( ! function_exists( 'en_contraste_fotografia_post_thumbnail' ) ) :
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 */
-	function en_contraste_fotografia_post_thumbnail( string $size = 'full') {
+	function en_contraste_fotografia_post_thumbnail( string $size = 'full' ) {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
 		}
@@ -170,12 +170,12 @@ if ( ! function_exists( 'en_contraste_fotografia_featured_image_bg' ) ) :
 
 	function en_contraste_fotografia_featured_image_bg( string $post_thumbnail_url = '' ) {
 
-		if ( $post_thumbnail_url ):
+		if ( $post_thumbnail_url ) :
 
 			?>
 			<style type="text/css">
 				.page-title-area .section__bg {
-					background-image: url('<?php echo esc_url( $post_thumbnail_url ) ?>');
+					background-image: url('<?php echo esc_url( $post_thumbnail_url ); ?>');
 				}
 			</style>
 			<?php

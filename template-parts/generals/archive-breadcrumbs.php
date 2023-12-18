@@ -25,11 +25,12 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="page-title-content text-center">
-					<h1 class="title entry-title"><?php $is_home ? single_post_title() : the_title(); ?></h1>
+					<h1 class="title entry-title"><?php the_archive_title(); ?></h1>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inicio</a></li>
-							<li class="breadcrumb-item active" aria-current="page"><?php $is_home ? single_post_title() : the_title(); ?></li>
+							<li class="breadcrumb-item"><a href="<?php echo esc_url( get_the_permalink( get_option( 'page_for_posts' ) ) ); ?>"><?php echo get_the_title( get_option( 'page_for_posts' ) ); ?></a></li>
+							<li class="breadcrumb-item active" aria-current="page"><?php the_archive_title(); ?></li>
 						</ol>
 					</nav>
 					<div class="scroll-to-down">

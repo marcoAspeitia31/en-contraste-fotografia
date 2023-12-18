@@ -11520,3 +11520,26 @@ p {
     /* line 547, assets/scss/_single-post.scss */
     .post-news .post-news-items .item.item-4 {
       border-bottom: 0; }
+
+/* line 5, assets/scss/_blog-navigation.scss */
+.posts-navigation .nav-links .nav-previous a,
+.posts-navigation .nav-links .nav-next a {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 2px solid #FC2E24;
+  padding: 0 36px;
+  font-size: 16px;
+  line-height: 54px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 5;
+  font-weight: 600;
+  background-color: #FC2E24;
+  font-family: "space_grotesk"; }

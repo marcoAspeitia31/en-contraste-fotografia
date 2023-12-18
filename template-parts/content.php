@@ -67,8 +67,8 @@
 							<div class="col-lg-6 col-md-6">
 								<div class="prev-post">
 									<?php
-									if ( get_previous_post( true ) ):
-										printf( esc_html__( '%s', 'en-contraste-fotografia' ), '<span>' . 'Post anterior' . '</span>'  );
+									if ( get_previous_post( true ) ) :
+										printf( esc_html__( '%s', 'en-contraste-fotografia' ), '<span>' . 'Post anterior' . '</span>' );
 										previous_post_link( '%link', '<p>%title</p>', true );
 									endif;
 									?>
@@ -77,8 +77,8 @@
 							<div class="col-lg-6 col-md-6">
 								<div class="prev-post">
 									<?php 
-									if ( get_next_post( true ) ):
-										printf( esc_html__( '%s', 'en-contraste-fotografia' ), '<span>' . 'Post siguiente' . '</span>'  );
+									if ( get_next_post( true ) ) :
+										printf( esc_html__( '%s', 'en-contraste-fotografia' ), '<span>' . 'Post siguiente' . '</span>' );
 										next_post_link( '%link', '<p>%title</p>', true );
 									endif;
 									?>
