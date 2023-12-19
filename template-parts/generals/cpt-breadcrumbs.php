@@ -13,6 +13,7 @@ $post_type = get_post_type_object( get_post_type( get_the_ID() ) );
 <!--====== PAGE TITLE  PART START ======-->
 
 <header class="entry-header page-title-area">
+	<?php en_contraste_fotografia_featured_image_bg( get_the_post_thumbnail_url() ); ?>
 	<div class="section__bg"></div>
 	<div class="container">
 		<div class="row">

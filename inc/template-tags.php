@@ -188,5 +188,4 @@ if ( ! function_exists( 'en_contraste_fotografia_featured_image_bg' ) ) :
 	}
 	add_action( 'wp_head', 'en_contraste_fotografia_featured_image_bg' );
 
-
 endif;

@@ -1819,7 +1819,7 @@ p {
       height: auto !important; } }
   /* line 31, assets/scss/_hero.scss */
   .hero-area .section__bg {
-    background-image: url(../images/encontraste-hero.jpg); }
+    background-image: url(../images/hero-nigth-wedding.jpg); }
     /* line 33, assets/scss/_hero.scss */
     .hero-area .section__bg::before {
       position: absolute;
@@ -5800,6 +5800,47 @@ p {
 .services-12-area {
   padding-top: 96px;
   padding-bottom: 100px; }
+
+/* line 745, assets/scss/_service.scss */
+.service-item-wrap {
+  display: block;
+  overflow: hidden;
+  position: relative; }
+  /* line 750, assets/scss/_service.scss */
+  .service-item-wrap::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    background: rgba(0, 0, 0, 0.4); }
+  /* line 764, assets/scss/_service.scss */
+  .service-item-wrap:hover::before {
+    background: rgba(221, 15, 67, 0.506);
+    content: ""; }
+  /* line 769, assets/scss/_service.scss */
+  .service-item-wrap .service-meta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    /* line 778, assets/scss/_service.scss */
+    .service-item-wrap .service-meta .title {
+      color: #fff; }
+    /* line 782, assets/scss/_service.scss */
+    .service-item-wrap .service-meta .service-meta-link {
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #fff; }
 
 /*===========================
 	    6.PORTFOLIO css 

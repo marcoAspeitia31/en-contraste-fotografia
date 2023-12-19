@@ -32,6 +32,7 @@ function en_contraste_fotografia_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	add_image_size( 'blog-grid', 320, 260, true );
+	add_image_size( 'services-grid', 385, 600, true );
 
 	/*
 		* Let WordPress manage the document title.
