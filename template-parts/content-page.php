@@ -17,23 +17,17 @@
 	<!--====== SINGLE POST PART START ======-->
 
 	<section class="single-post-area pt-70">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div id="entry-content" class="entry-content mt-30">
-						<?php
-						the_content();
+		<div id="entry-content" class="entry-content mt-30">
+			<?php
+			the_content();
 
-						wp_link_pages(
-							array(
-								'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'en-contraste-fotografia' ),
-								'after'  => '</div>',
-							)
-						);
-						?>
-					</div>
-				</div>
-			</div>
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'en-contraste-fotografia' ),
+					'after'  => '</div>',
+				)
+			);
+			?>
 		</div>
 	</section>
 
