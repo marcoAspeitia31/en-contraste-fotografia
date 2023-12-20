@@ -31,6 +31,17 @@
 		padding-top: 11px;
 		padding-bottom: 37px;
 		font-weight: 500;
+
+		&::before{
+			content: "";
+			width: 12rem;
+			height: 0.4rem;
+			background: $theme-color;
+			background: linear-gradient(90deg, rgba(252,46,36,1) 0%, rgba(252,46,36,0) 100%);
+			display: block;
+			border-radius: 3px;
+			margin-bottom: 0.5rem;
+		}
 		
 	}
 	& .title{

@@ -4157,51 +4157,61 @@ p {
     padding-top: 11px;
     padding-bottom: 37px;
     font-weight: 500; }
-  /* line 36, assets/scss/_about-us.scss */
+    /* line 35, assets/scss/_about-us.scss */
+    .about-content span::before {
+      content: "";
+      width: 12rem;
+      height: 0.4rem;
+      background: #FC2E24;
+      background: linear-gradient(90deg, #fc2e24 0%, rgba(252, 46, 36, 0) 100%);
+      display: block;
+      border-radius: 3px;
+      margin-bottom: 0.5rem; }
+  /* line 47, assets/scss/_about-us.scss */
   .about-content .title {
     font-size: 54px;
     line-height: 62px;
     padding-bottom: 4px;
     font-weight: 700; }
     @media (max-width: 767px) {
-      /* line 36, assets/scss/_about-us.scss */
+      /* line 47, assets/scss/_about-us.scss */
       .about-content .title {
         font-size: 32px;
         line-height: 42px; } }
-  /* line 46, assets/scss/_about-us.scss */
+  /* line 57, assets/scss/_about-us.scss */
   .about-content ul {
     margin: 25px 0 0 15px;
     padding: 0;
     color: #000; }
-    /* line 50, assets/scss/_about-us.scss */
+    /* line 61, assets/scss/_about-us.scss */
     .about-content ul li {
       font-size: 17px;
       line-height: 35px; }
-  /* line 55, assets/scss/_about-us.scss */
+  /* line 66, assets/scss/_about-us.scss */
   .about-content a {
     margin-top: 33px; }
 
-/* line 62, assets/scss/_about-us.scss */
+/* line 73, assets/scss/_about-us.scss */
 .about-thumb {
   margin-left: 70px; }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    /* line 62, assets/scss/_about-us.scss */
+    /* line 73, assets/scss/_about-us.scss */
     .about-thumb {
       margin-left: 0; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* line 62, assets/scss/_about-us.scss */
+    /* line 73, assets/scss/_about-us.scss */
     .about-thumb {
       margin-left: 0;
       margin-top: 30px; } }
   @media (max-width: 767px) {
-    /* line 62, assets/scss/_about-us.scss */
+    /* line 73, assets/scss/_about-us.scss */
     .about-thumb {
       margin-left: 0;
       margin-top: 30px; } }
-  /* line 75, assets/scss/_about-us.scss */
+  /* line 86, assets/scss/_about-us.scss */
   .about-thumb > img {
     width: 100%; }
-  /* line 78, assets/scss/_about-us.scss */
+  /* line 89, assets/scss/_about-us.scss */
   .about-thumb ul {
     margin: -60px 0 0 0;
     padding: 0;
@@ -4210,14 +4220,14 @@ p {
     justify-content: center;
     flex-wrap: wrap; }
     @media (max-width: 767px) {
-      /* line 78, assets/scss/_about-us.scss */
+      /* line 89, assets/scss/_about-us.scss */
       .about-thumb ul {
         display: none; } }
     @media only screen and (min-width: 576px) and (max-width: 767px) {
-      /* line 78, assets/scss/_about-us.scss */
+      /* line 89, assets/scss/_about-us.scss */
       .about-thumb ul {
         display: block; } }
-    /* line 91, assets/scss/_about-us.scss */
+    /* line 102, assets/scss/_about-us.scss */
     .about-thumb ul > li {
       text-align: center;
       height: 142px;
@@ -4228,78 +4238,78 @@ p {
       margin: 0 10px;
       background: #fff; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
-        /* line 91, assets/scss/_about-us.scss */
+        /* line 102, assets/scss/_about-us.scss */
         .about-thumb ul > li {
           width: 150px; } }
       @media (max-width: 767px) {
-        /* line 91, assets/scss/_about-us.scss */
+        /* line 102, assets/scss/_about-us.scss */
         .about-thumb ul > li {
           width: 150px;
           margin-bottom: 30px; } }
-      /* line 107, assets/scss/_about-us.scss */
+      /* line 118, assets/scss/_about-us.scss */
       .about-thumb ul > li span {
         display: block;
         font-size: 13px;
         padding-top: 13px;
         margin-bottom: -8px; }
-      /* line 113, assets/scss/_about-us.scss */
+      /* line 124, assets/scss/_about-us.scss */
       .about-thumb ul > li i {
         color: #FFAB4A;
         font-size: 10px; }
 
-/* line 128, assets/scss/_about-us.scss */
+/* line 139, assets/scss/_about-us.scss */
 .about-2-area {
   padding-top: 70px;
   padding-bottom: 100px; }
-  /* line 133, assets/scss/_about-us.scss */
+  /* line 144, assets/scss/_about-us.scss */
   .about-2-area.about-14-area .about-2-content a {
     background: #000;
     border-radius: 40px; }
-    /* line 136, assets/scss/_about-us.scss */
+    /* line 147, assets/scss/_about-us.scss */
     .about-2-area.about-14-area .about-2-content a:hover {
       background: #fff;
       box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.06);
       color: #000; }
-  /* line 145, assets/scss/_about-us.scss */
+  /* line 156, assets/scss/_about-us.scss */
   .about-2-area.about-14-area .about-2-thumb .thumb-2 .box {
     background: #000; }
-  /* line 151, assets/scss/_about-us.scss */
+  /* line 162, assets/scss/_about-us.scss */
   .about-2-area.about-15-area {
     padding-top: 0;
     margin-top: -30px; }
-    /* line 155, assets/scss/_about-us.scss */
+    /* line 166, assets/scss/_about-us.scss */
     .about-2-area.about-15-area .about-2-content span {
       background: #F0323C;
       color: #fff; }
-    /* line 162, assets/scss/_about-us.scss */
+    /* line 173, assets/scss/_about-us.scss */
     .about-2-area.about-15-area .about-2-content .item.active::before, .about-2-area.about-15-area .about-2-content .item:hover::before {
       background: #F0323C; }
-    /* line 167, assets/scss/_about-us.scss */
+    /* line 178, assets/scss/_about-us.scss */
     .about-2-area.about-15-area .about-2-content a {
       background: #F0323C;
       color: #fff;
       border: 2px solid #F0323C; }
-      /* line 171, assets/scss/_about-us.scss */
+      /* line 182, assets/scss/_about-us.scss */
       .about-2-area.about-15-area .about-2-content a:hover {
         background-color: transparent;
         color: #BF141D; }
-    /* line 179, assets/scss/_about-us.scss */
+    /* line 190, assets/scss/_about-us.scss */
     .about-2-area.about-15-area .about-2-thumb .thumb-2 .box {
       background: #F0323C; }
 
-/* line 188, assets/scss/_about-us.scss */
+/* line 199, assets/scss/_about-us.scss */
 .about-2-content {
   font-family: "space_grotesk";
   margin-right: -20px; }
   @media (max-width: 767px) {
-    /* line 188, assets/scss/_about-us.scss */
+    /* line 199, assets/scss/_about-us.scss */
     .about-2-content {
       margin-right: 0; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* line 188, assets/scss/_about-us.scss */
+    /* line 199, assets/scss/_about-us.scss */
     .about-2-content {
       margin-right: 0; } }
-  /* line 197, assets/scss/_about-us.scss */
+  /* line 208, assets/scss/_about-us.scss */
   .about-2-content span {
     background: linear-gradient(rgba(255, 86, 79, 0.15) 0%, rgba(250, 208, 41, 0.15) 100%);
     display: inline-block;
@@ -4309,7 +4319,7 @@ p {
     border-radius: 30px;
     color: #FF564F;
     font-family: "space_grotesk"; }
-  /* line 207, assets/scss/_about-us.scss */
+  /* line 218, assets/scss/_about-us.scss */
   .about-2-content > .title {
     font-size: 54px;
     line-height: 62px;
@@ -4318,26 +4328,26 @@ p {
     padding-bottom: 22px;
     text-transform: capitalize; }
     @media (max-width: 767px) {
-      /* line 207, assets/scss/_about-us.scss */
+      /* line 218, assets/scss/_about-us.scss */
       .about-2-content > .title {
         padding-right: 0;
         font-size: 32px;
         line-height: 46px; } }
     @media only screen and (min-width: 576px) and (max-width: 767px) {
-      /* line 207, assets/scss/_about-us.scss */
+      /* line 218, assets/scss/_about-us.scss */
       .about-2-content > .title {
         padding-right: 0;
         font-size: 32px;
         line-height: 42px; } }
-  /* line 225, assets/scss/_about-us.scss */
+  /* line 236, assets/scss/_about-us.scss */
   .about-2-content .item {
     padding-left: 20px;
     position: relative; }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      /* line 225, assets/scss/_about-us.scss */
+      /* line 236, assets/scss/_about-us.scss */
       .about-2-content .item {
         padding-left: 10px; } }
-    /* line 231, assets/scss/_about-us.scss */
+    /* line 242, assets/scss/_about-us.scss */
     .about-2-content .item::before {
       position: absolute;
       content: '';
@@ -4353,51 +4363,51 @@ p {
       -ms-transition: all 0.3s ease-out 0s;
       -o-transition: all 0.3s ease-out 0s;
       transition: all 0.3s ease-out 0s; }
-    /* line 243, assets/scss/_about-us.scss */
+    /* line 254, assets/scss/_about-us.scss */
     .about-2-content .item .title {
       font-family: "space_grotesk";
       font-size: 25px; }
-    /* line 249, assets/scss/_about-us.scss */
+    /* line 260, assets/scss/_about-us.scss */
     .about-2-content .item.active::before, .about-2-content .item:hover::before {
       background: linear-gradient(#ff564f 0%, #fad029 100%); }
-  /* line 255, assets/scss/_about-us.scss */
+  /* line 266, assets/scss/_about-us.scss */
   .about-2-content.about-11-content .title {
     padding-bottom: 7px; }
-  /* line 261, assets/scss/_about-us.scss */
+  /* line 272, assets/scss/_about-us.scss */
   .about-2-content.about-11-content .item.active::before, .about-2-content.about-11-content .item:hover::before {
     background: #564FFF; }
-  /* line 266, assets/scss/_about-us.scss */
+  /* line 277, assets/scss/_about-us.scss */
   .about-2-content.about-11-content a {
     background: #564FFF; }
-    /* line 268, assets/scss/_about-us.scss */
+    /* line 279, assets/scss/_about-us.scss */
     .about-2-content.about-11-content a:hover {
       background: #FC2380; }
 
 @media (max-width: 767px) {
-  /* line 280, assets/scss/_about-us.scss */
+  /* line 291, assets/scss/_about-us.scss */
   .about-2-thumb .thumb img {
     width: 100%; } }
 
-/* line 286, assets/scss/_about-us.scss */
+/* line 297, assets/scss/_about-us.scss */
 .about-2-thumb .thumb-2 {
   margin-top: -173px;
   position: relative; }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    /* line 286, assets/scss/_about-us.scss */
+    /* line 297, assets/scss/_about-us.scss */
     .about-2-thumb .thumb-2 {
       margin-left: 50px;
       margin-top: -100px; } }
   @media (max-width: 767px) {
-    /* line 286, assets/scss/_about-us.scss */
+    /* line 297, assets/scss/_about-us.scss */
     .about-2-thumb .thumb-2 {
       margin-top: 0;
       margin-left: 0;
       margin-top: 30px; } }
   @media (max-width: 767px) {
-    /* line 299, assets/scss/_about-us.scss */
+    /* line 310, assets/scss/_about-us.scss */
     .about-2-thumb .thumb-2 img {
       width: 100%; } }
-  /* line 304, assets/scss/_about-us.scss */
+  /* line 315, assets/scss/_about-us.scss */
   .about-2-thumb .thumb-2 .box {
     position: absolute;
     top: 50%;
@@ -4410,40 +4420,40 @@ p {
     text-align: center;
     padding-top: 20px; }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      /* line 304, assets/scss/_about-us.scss */
+      /* line 315, assets/scss/_about-us.scss */
       .about-2-thumb .thumb-2 .box {
         right: 0; } }
     @media (max-width: 767px) {
-      /* line 304, assets/scss/_about-us.scss */
+      /* line 315, assets/scss/_about-us.scss */
       .about-2-thumb .thumb-2 .box {
         right: 0; } }
-    /* line 321, assets/scss/_about-us.scss */
+    /* line 332, assets/scss/_about-us.scss */
     .about-2-thumb .thumb-2 .box .title {
       font-size: 44px;
       color: #fff;
       font-weight: 500;
       margin-bottom: 5px; }
-    /* line 327, assets/scss/_about-us.scss */
+    /* line 338, assets/scss/_about-us.scss */
     .about-2-thumb .thumb-2 .box > span {
       color: #fff;
       font-size: 18px;
       font-weight: 500;
       line-height: 28px; }
 
-/* line 337, assets/scss/_about-us.scss */
+/* line 348, assets/scss/_about-us.scss */
 .about-2-thumb.about-11-thumb .thumb-2 .box {
   background: #564FFF; }
 
-/* line 355, assets/scss/_about-us.scss */
+/* line 366, assets/scss/_about-us.scss */
 .about-company-area {
   padding-top: 70px;
   padding-bottom: 100px;
   position: relative;
   z-index: 10; }
-  /* line 360, assets/scss/_about-us.scss */
+  /* line 371, assets/scss/_about-us.scss */
   .about-company-area .section__bg {
     background-image: url(../images/company-bg.jpg); }
-    /* line 362, assets/scss/_about-us.scss */
+    /* line 373, assets/scss/_about-us.scss */
     .about-company-area .section__bg::before {
       position: absolute;
       content: '';
@@ -4453,57 +4463,57 @@ p {
       width: 100%;
       background: rgba(0, 0, 0, 0.8); }
 
-/* line 375, assets/scss/_about-us.scss */
+/* line 386, assets/scss/_about-us.scss */
 .about-company-content {
   padding: 61px 43px 55px 40px;
   background: #fff;
   border-radius: 5px;
   margin-right: 40px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* line 375, assets/scss/_about-us.scss */
+    /* line 386, assets/scss/_about-us.scss */
     .about-company-content {
       margin-right: 0; } }
   @media (max-width: 767px) {
-    /* line 375, assets/scss/_about-us.scss */
+    /* line 386, assets/scss/_about-us.scss */
     .about-company-content {
       margin-right: 0;
       padding: 20px; } }
   @media only screen and (min-width: 576px) and (max-width: 767px) {
-    /* line 375, assets/scss/_about-us.scss */
+    /* line 386, assets/scss/_about-us.scss */
     .about-company-content {
       margin-right: 0;
       padding: 61px 43px 55px 40px; } }
-  /* line 391, assets/scss/_about-us.scss */
+  /* line 402, assets/scss/_about-us.scss */
   .about-company-content .title {
     font-size: 54px;
     line-height: 62px;
     text-transform: capitalize; }
     @media (max-width: 767px) {
-      /* line 391, assets/scss/_about-us.scss */
+      /* line 402, assets/scss/_about-us.scss */
       .about-company-content .title {
         font-size: 36px;
         line-height: 40px; } }
-  /* line 400, assets/scss/_about-us.scss */
+  /* line 411, assets/scss/_about-us.scss */
   .about-company-content a {
     margin-top: 24px; }
 
-/* line 406, assets/scss/_about-us.scss */
+/* line 417, assets/scss/_about-us.scss */
 .company-brand-area {
   margin-left: -25px;
   margin-right: 8px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* line 406, assets/scss/_about-us.scss */
+    /* line 417, assets/scss/_about-us.scss */
     .company-brand-area {
       margin-left: 0;
       margin-right: 0;
       margin-top: 20px; } }
   @media (max-width: 767px) {
-    /* line 406, assets/scss/_about-us.scss */
+    /* line 417, assets/scss/_about-us.scss */
     .company-brand-area {
       margin-left: 0;
       margin-right: 0;
       margin-top: 20px; } }
-  /* line 419, assets/scss/_about-us.scss */
+  /* line 430, assets/scss/_about-us.scss */
   .company-brand-area .company-brand-item {
     display: flex;
     background: #fff;
@@ -4513,91 +4523,91 @@ p {
     border-radius: 5px;
     text-align: center; }
     @media (max-width: 767px) {
-      /* line 419, assets/scss/_about-us.scss */
+      /* line 430, assets/scss/_about-us.scss */
       .company-brand-area .company-brand-item {
         margin-top: 20px; } }
-    /* line 430, assets/scss/_about-us.scss */
+    /* line 441, assets/scss/_about-us.scss */
     .company-brand-area .company-brand-item a {
       opacity: .2; }
-    /* line 434, assets/scss/_about-us.scss */
+    /* line 445, assets/scss/_about-us.scss */
     .company-brand-area .company-brand-item:hover a {
       opacity: 1; }
-  /* line 439, assets/scss/_about-us.scss */
+  /* line 450, assets/scss/_about-us.scss */
   .company-brand-area .col-lg-6 {
     padding-left: 10px;
     padding-right: 10px; }
 
-/* line 449, assets/scss/_about-us.scss */
+/* line 460, assets/scss/_about-us.scss */
 .about-3-area {
   background: #F5F5F5; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 453, assets/scss/_about-us.scss */
+  /* line 464, assets/scss/_about-us.scss */
   .about-3-thumb {
     margin-bottom: 30px; } }
 
 @media (max-width: 767px) {
-  /* line 453, assets/scss/_about-us.scss */
+  /* line 464, assets/scss/_about-us.scss */
   .about-3-thumb {
     margin-bottom: 30px; } }
 
-/* line 460, assets/scss/_about-us.scss */
+/* line 471, assets/scss/_about-us.scss */
 .about-3-thumb img {
   width: 100%; }
 
-/* line 466, assets/scss/_about-us.scss */
+/* line 477, assets/scss/_about-us.scss */
 .about-3-content {
   margin-left: 75px; }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    /* line 466, assets/scss/_about-us.scss */
+    /* line 477, assets/scss/_about-us.scss */
     .about-3-content {
       margin-left: 0; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* line 466, assets/scss/_about-us.scss */
+    /* line 477, assets/scss/_about-us.scss */
     .about-3-content {
       margin-left: 0; } }
   @media (max-width: 767px) {
-    /* line 466, assets/scss/_about-us.scss */
+    /* line 477, assets/scss/_about-us.scss */
     .about-3-content {
       margin-left: 0; } }
-  /* line 478, assets/scss/_about-us.scss */
+  /* line 489, assets/scss/_about-us.scss */
   .about-3-content .content .title {
     font-family: "Playfair Display", serif;
     font-size: 60px;
     font-weight: 700; }
-  /* line 483, assets/scss/_about-us.scss */
+  /* line 494, assets/scss/_about-us.scss */
   .about-3-content .content .text {
     font-size: 20px;
     line-height: 30px;
     font-family: "space_grotesk";
     color: #000; }
-    /* line 489, assets/scss/_about-us.scss */
+    /* line 500, assets/scss/_about-us.scss */
     .about-3-content .content .text p span {
       font-family: "space_grotesk";
       color: #FC7A23; }
-  /* line 496, assets/scss/_about-us.scss */
+  /* line 507, assets/scss/_about-us.scss */
   .about-3-content .about-tab {
     margin-top: 40px; }
-    /* line 500, assets/scss/_about-us.scss */
+    /* line 511, assets/scss/_about-us.scss */
     .about-3-content .about-tab ul li a {
       padding: 0;
       background-color: transparent;
       color: #000;
       margin-right: 50px; }
       @media (max-width: 767px) {
-        /* line 500, assets/scss/_about-us.scss */
+        /* line 511, assets/scss/_about-us.scss */
         .about-3-content .about-tab ul li a {
           margin-right: 15px; } }
       @media only screen and (min-width: 576px) and (max-width: 767px) {
-        /* line 500, assets/scss/_about-us.scss */
+        /* line 511, assets/scss/_about-us.scss */
         .about-3-content .about-tab ul li a {
           margin-right: 50px; } }
-      /* line 511, assets/scss/_about-us.scss */
+      /* line 522, assets/scss/_about-us.scss */
       .about-3-content .about-tab ul li a.active {
         background-color: transparent;
         color: #000;
         position: relative; }
-        /* line 515, assets/scss/_about-us.scss */
+        /* line 526, assets/scss/_about-us.scss */
         .about-3-content .about-tab ul li a.active::before {
           position: absolute;
           content: '';
@@ -4606,94 +4616,94 @@ p {
           height: 2px;
           width: 100%;
           background: #FC7A23; }
-    /* line 527, assets/scss/_about-us.scss */
+    /* line 538, assets/scss/_about-us.scss */
     .about-3-content .about-tab ul li:last-child a {
       margin-right: 0; }
-    /* line 535, assets/scss/_about-us.scss */
+    /* line 546, assets/scss/_about-us.scss */
     .about-3-content .about-tab .tab-content .tab-pane .text {
       font-size: 20px;
       line-height: 30px;
       font-family: "space_grotesk";
       color: #000;
       padding-top: 26px; }
-    /* line 542, assets/scss/_about-us.scss */
+    /* line 553, assets/scss/_about-us.scss */
     .about-3-content .about-tab .tab-content .tab-pane ul {
       margin: 0 0 0 15px;
       padding: 0; }
-      /* line 545, assets/scss/_about-us.scss */
+      /* line 556, assets/scss/_about-us.scss */
       .about-3-content .about-tab .tab-content .tab-pane ul li {
         line-height: 35px;
         color: #000; }
 
-/* line 561, assets/scss/_about-us.scss */
+/* line 572, assets/scss/_about-us.scss */
 .brand-3-area {
   background: #fff;
   padding-top: 100px;
   padding-bottom: 100px; }
 
 @media (max-width: 767px) {
-  /* line 567, assets/scss/_about-us.scss */
+  /* line 578, assets/scss/_about-us.scss */
   .brand-3-items {
     flex-wrap: wrap; } }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 571, assets/scss/_about-us.scss */
+  /* line 582, assets/scss/_about-us.scss */
   .brand-3-items .item {
     margin: 0 25px; } }
 
 @media (max-width: 767px) {
-  /* line 571, assets/scss/_about-us.scss */
+  /* line 582, assets/scss/_about-us.scss */
   .brand-3-items .item {
     margin: 15px 40px; } }
 
-/* line 578, assets/scss/_about-us.scss */
+/* line 589, assets/scss/_about-us.scss */
 .brand-3-items .item a {
   opacity: .5; }
-  /* line 580, assets/scss/_about-us.scss */
+  /* line 591, assets/scss/_about-us.scss */
   .brand-3-items .item a:hover {
     opacity: 1; }
 
-/* line 592, assets/scss/_about-us.scss */
+/* line 603, assets/scss/_about-us.scss */
 .brand-9-area .brand-3-items .item a img {
   opacity: .5; }
 
-/* line 610, assets/scss/_about-us.scss */
+/* line 621, assets/scss/_about-us.scss */
 .about-4-area {
   background: #F5F5F5; }
 
-/* line 614, assets/scss/_about-us.scss */
+/* line 625, assets/scss/_about-us.scss */
 .about-4-thumb {
   margin-left: -80px;
   margin-right: 20px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* line 614, assets/scss/_about-us.scss */
+    /* line 625, assets/scss/_about-us.scss */
     .about-4-thumb {
       margin-left: 0;
       margin-right: 0;
       margin-bottom: 30px; } }
   @media (max-width: 767px) {
-    /* line 614, assets/scss/_about-us.scss */
+    /* line 625, assets/scss/_about-us.scss */
     .about-4-thumb {
       margin-left: 0;
       margin-right: 0;
       margin-bottom: 30px; } }
-  /* line 627, assets/scss/_about-us.scss */
+  /* line 638, assets/scss/_about-us.scss */
   .about-4-thumb img {
     width: 100%; }
-  /* line 630, assets/scss/_about-us.scss */
+  /* line 641, assets/scss/_about-us.scss */
   .about-4-thumb.about-10-thumb {
     margin-left: -30px;
     margin-right: 0px;
     position: relative; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
-      /* line 630, assets/scss/_about-us.scss */
+      /* line 641, assets/scss/_about-us.scss */
       .about-4-thumb.about-10-thumb {
         margin-left: 0; } }
     @media (max-width: 767px) {
-      /* line 630, assets/scss/_about-us.scss */
+      /* line 641, assets/scss/_about-us.scss */
       .about-4-thumb.about-10-thumb {
         margin-left: 0; } }
-    /* line 640, assets/scss/_about-us.scss */
+    /* line 651, assets/scss/_about-us.scss */
     .about-4-thumb.about-10-thumb .title {
       font-size: 60px;
       line-height: 70px;
@@ -4704,58 +4714,58 @@ p {
       transform: rotate(-45deg);
       font-weight: 600; }
       @media (max-width: 767px) {
-        /* line 640, assets/scss/_about-us.scss */
+        /* line 651, assets/scss/_about-us.scss */
         .about-4-thumb.about-10-thumb .title {
           font-size: 30px;
           bottom: 20px; } }
       @media only screen and (min-width: 576px) and (max-width: 767px) {
-        /* line 640, assets/scss/_about-us.scss */
+        /* line 651, assets/scss/_about-us.scss */
         .about-4-thumb.about-10-thumb .title {
           font-size: 60px;
           bottom: 80px; } }
 
-/* line 661, assets/scss/_about-us.scss */
+/* line 672, assets/scss/_about-us.scss */
 .about-4-content {
   font-size: 20px;
   font-weight: 300;
   line-height: 30px; }
-  /* line 665, assets/scss/_about-us.scss */
+  /* line 676, assets/scss/_about-us.scss */
   .about-4-content .title {
     font-size: 60px;
     line-height: 70px;
     font-family: "Playfair Display", serif;
     font-weight: 700; }
     @media (max-width: 767px) {
-      /* line 665, assets/scss/_about-us.scss */
+      /* line 676, assets/scss/_about-us.scss */
       .about-4-content .title {
         font-size: 40px; } }
-  /* line 675, assets/scss/_about-us.scss */
+  /* line 686, assets/scss/_about-us.scss */
   .about-4-content p span {
     font-weight: 500;
     color: #564FFF; }
-  /* line 682, assets/scss/_about-us.scss */
+  /* line 693, assets/scss/_about-us.scss */
   .about-4-content.about-10-content p span {
     color: #FC2380; }
-  /* line 690, assets/scss/_about-us.scss */
+  /* line 701, assets/scss/_about-us.scss */
   .about-4-content.about-10-content .skills .skill-item .skill-bar .bar-inner .bar {
     background: #FC2380; }
 
-/* line 716, assets/scss/_about-us.scss */
+/* line 727, assets/scss/_about-us.scss */
 .skills {
   position: relative;
   padding-top: 27px; }
 
-/* line 721, assets/scss/_about-us.scss */
+/* line 732, assets/scss/_about-us.scss */
 .skills .skill-item {
   position: relative;
   margin-bottom: 46px; }
 
-/* line 726, assets/scss/_about-us.scss */
+/* line 737, assets/scss/_about-us.scss */
 .skills .skill-item .skill-header {
   position: relative;
   margin-bottom: 10px; }
 
-/* line 733, assets/scss/_about-us.scss */
+/* line 744, assets/scss/_about-us.scss */
 .skills .skill-item .skill-header .skill-percentage {
   position: absolute;
   right: 0;
@@ -4764,33 +4774,33 @@ p {
   font-weight: 600;
   color: #000; }
 
-/* line 741, assets/scss/_about-us.scss */
+/* line 752, assets/scss/_about-us.scss */
 .skills .skill-item .skill-header .skill-percentage .count-box {
   font-size: 15px;
   font-weight: 400; }
 
-/* line 746, assets/scss/_about-us.scss */
+/* line 757, assets/scss/_about-us.scss */
 .skills .skill-item .skill-header .skill-percentage .count-box span {
   font-weight: 400;
   font-size: 14px; }
 
-/* line 751, assets/scss/_about-us.scss */
+/* line 762, assets/scss/_about-us.scss */
 .skills .skill-item .skill-header .skill-title {
   font-size: 17px;
   font-weight: 400;
   color: #000;
   margin-bottom: 2px; }
 
-/* line 758, assets/scss/_about-us.scss */
+/* line 769, assets/scss/_about-us.scss */
 .skills .skill-item:last-child {
   margin-bottom: 0; }
 
-/* line 762, assets/scss/_about-us.scss */
+/* line 773, assets/scss/_about-us.scss */
 .skills .skill-item .skill-bar {
   position: relative;
   width: 100%; }
 
-/* line 767, assets/scss/_about-us.scss */
+/* line 778, assets/scss/_about-us.scss */
 .skills .skill-item .skill-bar .bar-inner {
   position: relative;
   width: 100%;
@@ -4798,7 +4808,7 @@ p {
   border-bottom: 4px solid #fff;
   border-radius: 0px; }
 
-/* line 775, assets/scss/_about-us.scss */
+/* line 786, assets/scss/_about-us.scss */
 .skills .skill-item .skill-bar .bar-inner .bar {
   position: absolute;
   left: 0;
@@ -4811,71 +4821,71 @@ p {
   border-radius: 0px;
   margin-top: -3px; }
 
-/* line 797, assets/scss/_about-us.scss */
+/* line 808, assets/scss/_about-us.scss */
 .about-5-area {
   padding-top: 70px;
   padding-bottom: 100px;
   background: #F5F5F5; }
-  /* line 802, assets/scss/_about-us.scss */
+  /* line 813, assets/scss/_about-us.scss */
   .about-5-area .about-2-thumb .thumb-2 {
     margin-left: -90px; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
-      /* line 802, assets/scss/_about-us.scss */
+      /* line 813, assets/scss/_about-us.scss */
       .about-5-area .about-2-thumb .thumb-2 {
         margin-left: 30px; } }
     @media (max-width: 767px) {
-      /* line 802, assets/scss/_about-us.scss */
+      /* line 813, assets/scss/_about-us.scss */
       .about-5-area .about-2-thumb .thumb-2 {
         margin-left: 0px; } }
-    /* line 810, assets/scss/_about-us.scss */
+    /* line 821, assets/scss/_about-us.scss */
     .about-5-area .about-2-thumb .thumb-2 .box {
       right: 160px; }
       @media (max-width: 767px) {
-        /* line 810, assets/scss/_about-us.scss */
+        /* line 821, assets/scss/_about-us.scss */
         .about-5-area .about-2-thumb .thumb-2 .box {
           right: 0; } }
 
-/* line 821, assets/scss/_about-us.scss */
+/* line 832, assets/scss/_about-us.scss */
 .about-5-content {
   margin-left: -30px; }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    /* line 821, assets/scss/_about-us.scss */
+    /* line 832, assets/scss/_about-us.scss */
     .about-5-content {
       margin-left: 0; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* line 821, assets/scss/_about-us.scss */
+    /* line 832, assets/scss/_about-us.scss */
     .about-5-content {
       margin-left: 0; } }
   @media (max-width: 767px) {
-    /* line 821, assets/scss/_about-us.scss */
+    /* line 832, assets/scss/_about-us.scss */
     .about-5-content {
       margin-left: 0; } }
-  /* line 832, assets/scss/_about-us.scss */
+  /* line 843, assets/scss/_about-us.scss */
   .about-5-content .title {
     font-size: 60px;
     font-size: 70px;
     margin-bottom: 5px; }
     @media (max-width: 767px) {
-      /* line 832, assets/scss/_about-us.scss */
+      /* line 843, assets/scss/_about-us.scss */
       .about-5-content .title {
         font-size: 50px; } }
-  /* line 840, assets/scss/_about-us.scss */
+  /* line 851, assets/scss/_about-us.scss */
   .about-5-content .text {
     font-size: 20px;
     line-height: 30px;
     font-weight: 300;
     color: #000; }
-    /* line 845, assets/scss/_about-us.scss */
+    /* line 856, assets/scss/_about-us.scss */
     .about-5-content .text span {
       font-weight: 400;
       color: #FF564F; }
-  /* line 850, assets/scss/_about-us.scss */
+  /* line 861, assets/scss/_about-us.scss */
   .about-5-content .nav {
     padding-top: 27px; }
-    /* line 852, assets/scss/_about-us.scss */
+    /* line 863, assets/scss/_about-us.scss */
     .about-5-content .nav li {
       margin-right: 10px; }
-      /* line 854, assets/scss/_about-us.scss */
+      /* line 865, assets/scss/_about-us.scss */
       .about-5-content .nav li a {
         height: 36px;
         line-height: 36px;
@@ -4884,63 +4894,63 @@ p {
         padding: 0 16px;
         font-weight: 500; }
         @media (max-width: 767px) {
-          /* line 854, assets/scss/_about-us.scss */
+          /* line 865, assets/scss/_about-us.scss */
           .about-5-content .nav li a {
             margin-bottom: 10px; } }
-        /* line 864, assets/scss/_about-us.scss */
+        /* line 875, assets/scss/_about-us.scss */
         .about-5-content .nav li a.active {
           background: linear-gradient(90deg, #fad029 0%, #ff564f 65%);
           color: #fff; }
-  /* line 874, assets/scss/_about-us.scss */
+  /* line 885, assets/scss/_about-us.scss */
   .about-5-content .tab-content .tab-pane .text {
     font-size: 20px;
     line-height: 30px;
     font-weight: 300; }
-  /* line 880, assets/scss/_about-us.scss */
+  /* line 891, assets/scss/_about-us.scss */
   .about-5-content .tab-content .tab-pane .list .item-1 {
     margin-right: 80px; }
     @media (max-width: 767px) {
-      /* line 880, assets/scss/_about-us.scss */
+      /* line 891, assets/scss/_about-us.scss */
       .about-5-content .tab-content .tab-pane .list .item-1 {
         margin: 0; } }
     @media only screen and (min-width: 576px) and (max-width: 767px) {
-      /* line 880, assets/scss/_about-us.scss */
+      /* line 891, assets/scss/_about-us.scss */
       .about-5-content .tab-content .tab-pane .list .item-1 {
         margin-right: 40px; } }
-  /* line 889, assets/scss/_about-us.scss */
+  /* line 900, assets/scss/_about-us.scss */
   .about-5-content .tab-content .tab-pane .list ul {
     margin: 0;
     padding-left: 16px; }
-    /* line 893, assets/scss/_about-us.scss */
+    /* line 904, assets/scss/_about-us.scss */
     .about-5-content .tab-content .tab-pane .list ul li a {
       line-height: 35px;
       color: #383838; }
 
-/* line 913, assets/scss/_about-us.scss */
+/* line 924, assets/scss/_about-us.scss */
 .about-6-area {
   background: #564FFF;
   padding: 100px 0 150px;
   overflow: hidden; }
   @media (max-width: 767px) {
-    /* line 913, assets/scss/_about-us.scss */
+    /* line 924, assets/scss/_about-us.scss */
     .about-6-area {
       padding: 100px 0 100px; } }
   @media only screen and (min-width: 576px) and (max-width: 767px) {
-    /* line 913, assets/scss/_about-us.scss */
+    /* line 924, assets/scss/_about-us.scss */
     .about-6-area {
       padding: 100px 0 150px; } }
-  /* line 923, assets/scss/_about-us.scss */
+  /* line 934, assets/scss/_about-us.scss */
   .about-6-area.about-12-area {
     background: linear-gradient(90deg, #13bf9e 0%, #108971 100%); }
 
-/* line 930, assets/scss/_about-us.scss */
+/* line 941, assets/scss/_about-us.scss */
 .about-6-content span {
   color: #fff;
   font-size: 25px;
   font-weight: 500;
   text-transform: uppercase; }
 
-/* line 936, assets/scss/_about-us.scss */
+/* line 947, assets/scss/_about-us.scss */
 .about-6-content .title {
   font-size: 54px;
   line-height: 62px;
@@ -4949,36 +4959,36 @@ p {
   margin-bottom: 25px;
   text-transform: capitalize; }
   @media (max-width: 767px) {
-    /* line 936, assets/scss/_about-us.scss */
+    /* line 947, assets/scss/_about-us.scss */
     .about-6-content .title {
       font-size: 32px;
       line-height: 40px; } }
   @media only screen and (min-width: 576px) and (max-width: 767px) {
-    /* line 936, assets/scss/_about-us.scss */
+    /* line 947, assets/scss/_about-us.scss */
     .about-6-content .title {
       font-size: 54px;
       line-height: 62px; } }
 
-/* line 952, assets/scss/_about-us.scss */
+/* line 963, assets/scss/_about-us.scss */
 .about-6-content .text {
   color: #fff;
   padding-right: 50px; }
   @media (max-width: 767px) {
-    /* line 952, assets/scss/_about-us.scss */
+    /* line 963, assets/scss/_about-us.scss */
     .about-6-content .text {
       padding-right: 0; } }
 
-/* line 959, assets/scss/_about-us.scss */
+/* line 970, assets/scss/_about-us.scss */
 .about-6-content ul {
   margin: 0;
   padding-left: 16px;
   padding-top: 10px; }
-  /* line 963, assets/scss/_about-us.scss */
+  /* line 974, assets/scss/_about-us.scss */
   .about-6-content ul li {
     color: #fff;
     line-height: 35px; }
 
-/* line 968, assets/scss/_about-us.scss */
+/* line 979, assets/scss/_about-us.scss */
 .about-6-content a {
   color: #fff;
   background: #FC7A23;
@@ -4989,12 +4999,12 @@ p {
   width: 156px;
   display: inline-block;
   margin-top: 44px; }
-  /* line 978, assets/scss/_about-us.scss */
+  /* line 989, assets/scss/_about-us.scss */
   .about-6-content a:hover {
     background-color: transparent;
     color: #FC7A23; }
 
-/* line 984, assets/scss/_about-us.scss */
+/* line 995, assets/scss/_about-us.scss */
 .about-6-content.about-12-content a {
   background: #FAD029;
   border-color: #FAD029;
@@ -5007,25 +5017,25 @@ p {
   padding: 0 36px;
   width: auto;
   border-radius: 5px; }
-  /* line 996, assets/scss/_about-us.scss */
+  /* line 1007, assets/scss/_about-us.scss */
   .about-6-content.about-12-content a:hover {
     background-color: transparent;
     border-color: #FAD029;
     color: #FAD029; }
 
-/* line 1005, assets/scss/_about-us.scss */
+/* line 1016, assets/scss/_about-us.scss */
 .about-6-thumb {
   position: relative;
   z-index: 10; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* line 1005, assets/scss/_about-us.scss */
+    /* line 1016, assets/scss/_about-us.scss */
     .about-6-thumb {
       margin-top: 40px; } }
   @media (max-width: 767px) {
-    /* line 1005, assets/scss/_about-us.scss */
+    /* line 1016, assets/scss/_about-us.scss */
     .about-6-thumb {
       margin-top: 40px; } }
-  /* line 1014, assets/scss/_about-us.scss */
+  /* line 1025, assets/scss/_about-us.scss */
   .about-6-thumb::before {
     position: absolute;
     content: '';
@@ -5036,86 +5046,86 @@ p {
     background: #000;
     z-index: -1; }
     @media (max-width: 767px) {
-      /* line 1014, assets/scss/_about-us.scss */
+      /* line 1025, assets/scss/_about-us.scss */
       .about-6-thumb::before {
         display: none; } }
     @media only screen and (min-width: 576px) and (max-width: 767px) {
-      /* line 1014, assets/scss/_about-us.scss */
+      /* line 1025, assets/scss/_about-us.scss */
       .about-6-thumb::before {
         display: block; } }
-  /* line 1031, assets/scss/_about-us.scss */
+  /* line 1042, assets/scss/_about-us.scss */
   .about-6-thumb.about-12-thumb img {
     border-radius: 10px; }
-  /* line 1034, assets/scss/_about-us.scss */
+  /* line 1045, assets/scss/_about-us.scss */
   .about-6-thumb.about-12-thumb::before {
     border-radius: 10px; }
 
-/* line 1049, assets/scss/_about-us.scss */
+/* line 1060, assets/scss/_about-us.scss */
 .about-8-thumb .thumb-2 .box {
   background: #FF564F;
   border-radius: 0; }
 
-/* line 1060, assets/scss/_about-us.scss */
+/* line 1071, assets/scss/_about-us.scss */
 .about-8-content .nav li a {
   background: rgba(255, 86, 79, 0.2);
   border-radius: 0; }
-  /* line 1063, assets/scss/_about-us.scss */
+  /* line 1074, assets/scss/_about-us.scss */
   .about-8-content .nav li a.active {
     background: #ff564f; }
 
-/* line 1082, assets/scss/_about-us.scss */
+/* line 1093, assets/scss/_about-us.scss */
 .about-9-area {
   background: linear-gradient(312deg, #45108a 0%, #10054d 100%);
   padding-top: 100px;
   padding-bottom: 100px; }
 
-/* line 1089, assets/scss/_about-us.scss */
+/* line 1100, assets/scss/_about-us.scss */
 .about-9-thumb {
   margin-left: -85px;
   margin-right: 70px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* line 1089, assets/scss/_about-us.scss */
+    /* line 1100, assets/scss/_about-us.scss */
     .about-9-thumb {
       margin-left: 0;
       margin-right: 0; } }
   @media (max-width: 767px) {
-    /* line 1089, assets/scss/_about-us.scss */
+    /* line 1100, assets/scss/_about-us.scss */
     .about-9-thumb {
       margin-left: 0;
       margin-right: 0; } }
-  /* line 1100, assets/scss/_about-us.scss */
+  /* line 1111, assets/scss/_about-us.scss */
   .about-9-thumb img {
     width: 100%; }
 
-/* line 1106, assets/scss/_about-us.scss */
+/* line 1117, assets/scss/_about-us.scss */
 .about-9-content {
   color: #fff; }
-  /* line 1108, assets/scss/_about-us.scss */
+  /* line 1119, assets/scss/_about-us.scss */
   .about-9-content .title {
     color: #fff;
     font-size: 54px;
     line-height: 62px;
     margin-bottom: 23px; }
     @media (max-width: 767px) {
-      /* line 1108, assets/scss/_about-us.scss */
+      /* line 1119, assets/scss/_about-us.scss */
       .about-9-content .title {
         font-size: 36px;
         line-height: 46px; } }
     @media only screen and (min-width: 576px) and (max-width: 767px) {
-      /* line 1108, assets/scss/_about-us.scss */
+      /* line 1119, assets/scss/_about-us.scss */
       .about-9-content .title {
         font-size: 54px;
         line-height: 64px; } }
-  /* line 1122, assets/scss/_about-us.scss */
+  /* line 1133, assets/scss/_about-us.scss */
   .about-9-content ul {
     margin: 0;
     padding-left: 16px;
     padding-top: 10px; }
-    /* line 1126, assets/scss/_about-us.scss */
+    /* line 1137, assets/scss/_about-us.scss */
     .about-9-content ul li {
       line-height: 35px; }
 
-/* line 1137, assets/scss/_about-us.scss */
+/* line 1148, assets/scss/_about-us.scss */
 .brand-12-area .brand-item img {
   display: inline-block;
   opacity: .3;
@@ -5126,7 +5136,7 @@ p {
   transition: all 0.3s ease-out 0s;
   cursor: pointer; }
 
-/* line 1144, assets/scss/_about-us.scss */
+/* line 1155, assets/scss/_about-us.scss */
 .brand-12-area .brand-item:hover img {
   opacity: 1; }
 
@@ -11392,7 +11402,7 @@ p {
     /* line 315, assets/scss/_single-post.scss */
     .single-post-topbar span a,
     .entry-footer span a {
-      color: white; }
+      color: #fff; }
   /* line 319, assets/scss/_single-post.scss */
   .single-post-topbar .social,
   .entry-footer .social {
