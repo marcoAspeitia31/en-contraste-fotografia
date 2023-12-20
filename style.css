@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*!
 Theme Name: En contraste fotografia
 Theme URI: http://underscores.me/
@@ -22,6 +23,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -49,14 +51,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
+
 /* Normalize
 --------------------------------------------- */
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
 /* Document
 	 ========================================================================== */
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -68,6 +75,7 @@ html {
 
 /* Sections
 	 ========================================================================== */
+
 /**
  * Remove the margin in all browsers.
  */
@@ -93,6 +101,7 @@ h1 {
 
 /* Grouping content
 	 ========================================================================== */
+
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
@@ -114,6 +123,7 @@ pre {
 
 /* Text-level semantics
 	 ========================================================================== */
+
 /**
  * Remove the gray background on active links in IE 10.
  */
@@ -179,6 +189,7 @@ sup {
 
 /* Embedded content
 	 ========================================================================== */
+
 /**
  * Remove the border on images inside links in IE 10.
  */
@@ -188,6 +199,7 @@ img {
 
 /* Forms
 	 ========================================================================== */
+
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
@@ -333,6 +345,7 @@ textarea {
 
 /* Interactive
 	 ========================================================================== */
+
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
@@ -349,6 +362,7 @@ summary {
 
 /* Misc
 	 ========================================================================== */
+
 /**
  * Add the correct display in IE 10+.
  */
@@ -365,6 +379,7 @@ template {
 
 /* Box sizing
 --------------------------------------------- */
+
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
@@ -380,6 +395,7 @@ html {
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
+
 /* Typography
 --------------------------------------------- */
 body,
@@ -511,22 +527,25 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #FC2E24;
+	color: #fc2e24;
 }
 
 a:visited {
-	color: #FC2380;
+	color: #fc2380;
 }
 
-a:hover, a:focus, a:active {
-	color: #FC2380;
+a:hover,
+a:focus,
+a:active {
+	color: #fc2380;
 }
 
 a:focus {
 	outline: thin dotted;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
 	outline: 0;
 }
 
@@ -552,7 +571,8 @@ input[type="submit"]:hover {
 	border-color: #ccc #bbb #aaa;
 }
 
-button:active, button:focus,
+button:active,
+button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -614,9 +634,11 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
+
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
@@ -676,16 +698,20 @@ textarea {
 }
 
 @media screen and (min-width: 37.5em) {
+
 	.menu-toggle {
 		display: none;
 	}
+
 	.main-navigation ul {
 		display: flex;
 	}
 }
 
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
+.site-main .comment-navigation,
+.site-main
+.posts-navigation,
+.site-main
 .post-navigation {
 	margin: 0 0 1.5em;
 }
@@ -783,11 +809,12 @@ textarea {
 .wp-block-comments .wp-block-comment-template .comment .comment-body,
 .wp-block-comments .wp-block-comment-template .comment > div:first-of-type {
 	padding: 1rem 1.5rem;
-	border-radius: .5rem;
+	border-radius: 0.5rem;
 	border: 1px solid #edebeb;
 	background: #fff;
 	margin-bottom: 10px;
 	transition: all 0.3s ease-in-out 0s;
+
 	/* -webkit-box-shadow: 5px 5px 100px -80px rgba(0,0,0,0.75);
 				-moz-box-shadow: 5px 5px 100px -80px rgba(0,0,0,0.75);
 				box-shadow: 5px 5px 100px -80px rgba(0,0,0,0.75); */
@@ -832,7 +859,7 @@ textarea {
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
-	border: 2px solid #FC2E24;
+	border: 2px solid #fc2e24;
 	padding: 5px 10px;
 	margin-bottom: 5px;
 	font-size: 16px;
@@ -841,7 +868,7 @@ textarea {
 	cursor: pointer;
 	z-index: 5;
 	font-weight: 600;
-	background-color: #FC2E24;
+	background-color: #fc2e24;
 }
 
 .comments-area .comment-list .comment .comment-body .reply .comment-reply-link:hover,
@@ -861,7 +888,7 @@ textarea {
 .wp-block-comments .wp-block-comment-template .comment > div:first-of-type .reply .comment-reply-link:hover,
 .wp-block-comments .wp-block-comment-template .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link:hover {
 	background-color: transparent;
-	color: #FC2E24;
+	color: #fc2e24;
 }
 
 .comments-area .comment-list .comment .comment-body .reply .comment-reply-link::before,
@@ -880,8 +907,8 @@ textarea {
 .wp-block-comments .wp-block-comment-template .comment .comment-body .wp-block-comment-reply-link .comment-reply-link::before,
 .wp-block-comments .wp-block-comment-template .comment > div:first-of-type .reply .comment-reply-link::before,
 .wp-block-comments .wp-block-comment-template .comment > div:first-of-type .wp-block-comment-reply-link .comment-reply-link::before {
-	font-family: 'Font Awesome 5 Pro';
-	content: '\f3e5';
+	font-family: "Font Awesome 5 Pro";
+	content: "\f3e5";
 	margin-right: 5px;
 }
 
@@ -907,12 +934,12 @@ textarea {
 .wp-block-comments .wp-block-comment-template .comment .comment-body .comment-meta .edit-link,
 .wp-block-comments .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link {
 	background: transparent;
-	border: 2px solid #FC7A23;
-	color: #FC7A23;
+	border: 2px solid #fc7a23;
+	color: #fc7a23;
 	transition: all 0.3s ease-out 0s;
 	display: inline-flex;
 	padding: 0 0.3rem;
-	border-radius: .5rem;
+	border-radius: 0.5rem;
 }
 
 .comments-area .comment-list .comment .comment-body .comment-meta .edit-link::before,
@@ -923,8 +950,8 @@ textarea {
 .wp-block-comments .comment-list .comment > div:first-of-type .comment-meta .edit-link::before,
 .wp-block-comments .wp-block-comment-template .comment .comment-body .comment-meta .edit-link::before,
 .wp-block-comments .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link::before {
-	font-family: 'Font Awesome 5 Pro';
-	content: '\f044';
+	font-family: "Font Awesome 5 Pro";
+	content: "\f044";
 	margin-right: 5px;
 }
 
@@ -936,7 +963,7 @@ textarea {
 .wp-block-comments .comment-list .comment > div:first-of-type .comment-meta .edit-link a,
 .wp-block-comments .wp-block-comment-template .comment .comment-body .comment-meta .edit-link a,
 .wp-block-comments .wp-block-comment-template .comment > div:first-of-type .comment-meta .edit-link a {
-	color: #FC7A23;
+	color: #fc7a23;
 }
 
 .comments-area .comment-list .comment .comment-body:hover,
@@ -949,7 +976,7 @@ textarea {
 .wp-block-comments .wp-block-comment-template .comment > div:first-of-type:hover {
 	background: #fff;
 	border-color: #fff;
-	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .comments-area .comment-list .comment .children,
@@ -961,7 +988,7 @@ textarea {
 
 .comments-area .comment-respond,
 .wp-block-comments .comment-respond {
-	background: white;
+	background: #fff;
 	padding: 1.5rem;
 	border: 1px solid #edebeb;
 	border-radius: 5px;
@@ -972,7 +999,7 @@ textarea {
 .wp-block-comments .comment-respond:hover {
 	background: #fff;
 	border-color: #fff;
-	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .comments-area .comment-respond .comment-form .comment-form-comment,
@@ -1000,7 +1027,7 @@ textarea {
 .wp-block-comments .comment-respond .comment-form .comment-form-author > input,
 .wp-block-comments .comment-respond .comment-form .comment-form-email > input,
 .wp-block-comments .comment-respond .comment-form .comment-form-url > input {
-	padding: calc(.667em + 2px);
+	padding: calc(0.667em + 2px);
 }
 
 .comments-area .comment-respond .comment-form .comment-form-comment textarea,
@@ -1014,7 +1041,7 @@ textarea {
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
-	border: 2px solid #FC2E24;
+	border: 2px solid #fc2e24;
 	padding: 1rem;
 	margin-bottom: 5px;
 	font-size: 16px;
@@ -1023,18 +1050,18 @@ textarea {
 	cursor: pointer;
 	z-index: 5;
 	font-weight: 600;
-	background-color: #FC2E24;
+	background-color: #fc2e24;
 	transition: all 0.3s ease-out 0s;
 }
 
 .comments-area .comment-respond .comment-form .form-submit .submit:hover,
 .wp-block-comments .comment-respond .comment-form .form-submit .submit:hover {
 	background-color: transparent;
-	color: #FC2E24;
+	color: #fc2e24;
 }
 
 .wp-block-post-comments-form {
-	background: white;
+	background: #fff;
 	padding: 1.5rem;
 	border: 1px solid #edebeb;
 	border-radius: 5px;
@@ -1044,7 +1071,7 @@ textarea {
 .wp-block-post-comments-form:hover {
 	background: #fff;
 	border-color: #fff;
-	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .wp-block-post-comments-form .comment-form .comment-form-comment textarea {
@@ -1056,7 +1083,7 @@ textarea {
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
-	border: 2px solid #FC2E24;
+	border: 2px solid #fc2e24;
 	padding: 1rem;
 	margin-bottom: 5px;
 	font-size: 16px;
@@ -1065,13 +1092,13 @@ textarea {
 	cursor: pointer;
 	z-index: 5;
 	font-weight: 600;
-	background-color: #FC2E24;
+	background-color: #fc2e24;
 	transition: all 0.3s ease-out 0s;
 }
 
 .wp-block-post-comments-form .comment-form .form-submit .submit:hover {
 	background-color: transparent;
-	color: #FC2E24;
+	color: #fc2e24;
 }
 
 /* Widgets
@@ -1174,8 +1201,10 @@ textarea {
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
+
 /* Jetpack infinite scroll
 --------------------------------------------- */
+
 /* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
@@ -1190,8 +1219,10 @@ textarea {
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
+
 /* Accessibility
 --------------------------------------------- */
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
 	border: 0;
@@ -1234,16 +1265,20 @@ textarea {
 /* Alignments
 --------------------------------------------- */
 .alignleft {
+
 	/*rtl:ignore*/
 	float: left;
+
 	/*rtl:ignore*/
 	margin-right: 1.5em;
 	margin-bottom: 1.5em;
 }
 
 .alignright {
+
 	/*rtl:ignore*/
 	float: right;
+
 	/*rtl:ignore*/
 	margin-left: 1.5em;
 	margin-bottom: 1.5em;
@@ -1256,5 +1291,3 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
-
-/*# sourceMappingURL=style.css.map */

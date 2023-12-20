@@ -97,7 +97,7 @@
 		
 	}
 	.comment-respond {
-		background: white;
+		background: $white;
 		padding: 1.5rem;
 		border: 1px solid $color__background-pre;
 		border-radius: 5px;
@@ -157,15 +157,15 @@
 }
 
 .wp-block-post-comments-form {
-	background: white;
+	background: $white;
 	padding: 1.5rem;
 	border: 1px solid $color__background-pre;
 	border-radius: 5px;
 	transition: all 0.3s ease-out 0s;
 
 	&:hover {
-		background: #fff;
-		border-color: #fff;
+		background: $white;
+		border-color: $white;
 		box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
 	}
 
