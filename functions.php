@@ -21,32 +21,45 @@ if ( ! defined( 'EN_CONTRASTE_FOTOGRAFIA_VERSION' ) ) {
  */
 function en_contraste_fotografia_setup() {
 	/*
-		* Make theme available for translation.
-		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on En contraste fotografia, use a find and replace
-		* to change 'en-contraste-fotografia' to the name of your theme in all the template files.
-		*/
+	* Make theme available for translation.
+	* Translations can be filed in the /languages/ directory.
+	* If you're building a theme based on En contraste fotografia, use a find and replace
+	* to change 'en-contraste-fotografia' to the name of your theme in all the template files.
+	*/
 	load_theme_textdomain( 'en-contraste-fotografia', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
+	/**
+	 * Register custom images sizes to the theme.
+	 * 
+	 * @link https://developer.wordpress.org/reference/functions/add_image_size/
+	 */
+	add_image_size( 'about', 570, 670, true );
 	add_image_size( 'blog-grid', 320, 260, true );
 	add_image_size( 'services-grid', 385, 600, true );
 
 	/*
-		* Let WordPress manage the document title.
-		* By adding theme support, we declare that this theme does not use a
-		* hard-coded <title> tag in the document head, and expect WordPress to
-		* provide it for us.
-		*/
+	* Enable support for Wide Alignment for Gutenberg blocks
+	*
+	* @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#wide-alignment
+	*/
+	add_theme_support( 'align-wide' );
+
+	/*
+	* Let WordPress manage the document title.
+	* By adding theme support, we declare that this theme does not use a
+	* hard-coded <title> tag in the document head, and expect WordPress to
+	* provide it for us.
+	*/
 	add_theme_support( 'title-tag' );
 
 	/*
-		* Enable support for Post Thumbnails on posts and pages.
-		*
-		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		*/
+	* Enable support for Post Thumbnails on posts and pages.
+	*
+	* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+	*/
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
@@ -58,9 +71,9 @@ function en_contraste_fotografia_setup() {
 	);
 
 	/*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
-		*/
+	* Switch default core markup for search form, comment form, and comments
+	* to output valid HTML5.
+	*/
 	add_theme_support(
 		'html5',
 		array(

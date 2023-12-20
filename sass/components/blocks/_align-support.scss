@@ -1,0 +1,45 @@
+.alignwide,
+.alignfull,
+.wp-block-columns {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width: $sm) {
+    .wp-block-columns {
+        max-width: 540px;
+    }
+    .alignwide {
+        max-width: 566px;
+    }
+}
+
+@media screen and (min-width: $md) {
+    .wp-block-columns {
+        max-width: 720px;
+    }
+    .alignwide {
+        max-width: 758px;
+    }
+}
+
+@media screen and (min-width: $lg) {
+    .wp-block-columns {
+        max-width: 960px;
+    }
+    .alignwide {
+        max-width: 982px;
+    }
+}
+
+@media screen and (min-width: $xl) {
+    .wp-block-columns {
+        max-width: 1140px;
+    }
+    .alignwide {
+        max-width: 1200px;
+    }
+}
