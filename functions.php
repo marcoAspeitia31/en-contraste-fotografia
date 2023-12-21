@@ -187,6 +187,19 @@ function en_contraste_fotografia_scripts() {
 add_action( 'wp_enqueue_scripts', 'en_contraste_fotografia_scripts' );
 
 /**
+ * Filter the except length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ * 
+ * @link https://developer.wordpress.org/reference/hooks/excerpt_length/
+ */
+function en_contraste_fotografia_excerpt_length( $length ) {
+    return 30;
+}
+add_filter( 'excerpt_length', 'en_contraste_fotografia_excerpt_length', 999 );
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';

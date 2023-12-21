@@ -242,6 +242,18 @@ p {
         @media #{$xs} {
             font-size: 36px;
         }
+        &::before {
+            content: "";
+            width: 12rem;
+            height: 0.4rem;
+            background: $theme-color;
+            background: linear-gradient(90deg, rgba(252,46,36,1) 0%, rgba(252,46,36,0) 100%);
+            display: block;
+            border-radius: 3px;
+            margin-bottom: 0.5rem;
+            position: absolute;
+            right: 34%;
+        }
     }
     & p{
         padding: 0 20px;

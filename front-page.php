@@ -34,15 +34,9 @@ get_header();
 						<div class="row align-items-center">
 							<div class="col-lg-7">
 								<div class="hero-content">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/hero-line.png" alt="">
 									<h1 class="title animated wow fadeInLeft" data-wow-duration="3000ms" data-wow-delay="0ms">Global Leader in Modern Business Innovation</h1>
 									<span class="animated wow fadeInLeft" data-wow-duration="3000ms" data-wow-delay="300ms">With unique business passionate people behind.</span>
 									<a class="main-btn main-btn-2 animated wow fadeInDown" data-wow-duration="3000ms" data-wow-delay="600ms" href="#">Let’s Talk</a>
-								</div>
-							</div>
-							<div class="col-lg-5">
-								<div class="hero-play">
-									<a class="video-popup" href="https://www.youtube.com/watch?v=4NJlUribp3c&list=RD4NJlUribp3c&start_radio=1"><i class="fas fa-play"></i></a>
 								</div>
 							</div>
 						</div>
@@ -493,80 +487,6 @@ get_header();
 				</section>
 				
 				<!--====== PRICING PART ENDS ======-->
-				
-				<!--====== ARTICAL PART START ======-->
-				
-				<section class="article-area">
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-lg-6 col-md-9">
-								<div class="section-title text-center">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/hero-line.png" alt="">
-									<h3 class="title">Recent Article</h3>
-									<p>Our focus is on delivering you the absolute best support guiding you through training and providing.</p>
-								</div>
-							</div>
-						</div>
-						<div class="row justify-content-center">
-							<div class="col-lg-4 col-md-6 col-sm-9">
-								<div class="article-item mt-30">
-									<div class="article-top text-center">
-										<a href="#"><span>The Clear Differene Between Cold Brew & Iced Coffee</span></a>
-									</div>
-									<div class="article-thumb">
-										<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/article-1.jpg" alt=""></a>
-										<div class="date">
-											<h5 class="title">25</h5>
-											<span>JUN</span>
-										</div>
-									</div>
-									<div class="article-content pl-25 pr-25 pt-25">
-										<p>DNP Installations can carry out all maintenance on phone and data and phone points in...</p>
-										<a href="#">READ MORE</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-9">
-								<div class="article-item mt-30">
-									<div class="article-top text-center">
-										<a href="#"><span>Your Small Business Success Form marketing </span></a>
-									</div>
-									<div class="article-thumb">
-										<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/article-2.jpg" alt=""></a>
-										<div class="date">
-											<h5 class="title">25</h5>
-											<span>JUN</span>
-										</div>
-									</div>
-									<div class="article-content pl-25 pr-25 pt-25">
-										<p>DNP Installations can carry out all maintenance on phone and data and phone points in...</p>
-										<a href="#">READ MORE</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-9">
-								<div class="article-item mt-30 item-3">
-									<div class="article-top text-center">
-										<a href="#"><span>The Start-Up Ultimate Guide Make WordPress Journal.</span></a>
-									</div>
-									<div class="article-thumb">
-										<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/article-3.jpg" alt=""></a>
-										<div class="date">
-											<h5 class="title">25</h5>
-											<span>JUN</span>
-										</div>
-									</div>
-									<div class="article-content pl-25 pr-25 pt-25">
-										<p>DNP Installations can carry out all maintenance on phone and data and phone points in...</p>
-										<a href="#">READ MORE</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				
-				<!--====== ARTICAL PART ENDS ======-->
 
 				<?php
 
