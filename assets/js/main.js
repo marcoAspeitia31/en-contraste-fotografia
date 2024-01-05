@@ -5,9 +5,6 @@
 
     $(document).on('ready', function () {
 
-        console.log('hola mundo')
-
-
         /*===============================  
              Sticky 
         ================================*/
@@ -19,6 +16,8 @@
                 $(".header-nav").addClass("sticky");
             }
         });
+
+        
 
         /*===============================  
              Mobile Menu 
@@ -697,6 +696,7 @@
                 enabled: true
             }
         });
+        
 
     });
 
@@ -707,7 +707,6 @@
     ================================*/
 
     $(window).on('scroll', function (event) {
-        console.log('bajando del scroll')
         if ($(this).scrollTop() > 600) {
             $('.back-to-top').fadeIn(200)
         } else {
@@ -728,6 +727,7 @@
              Prealoder 
         ================================*/
         $('.preloader').delay(500).fadeOut(500);
+
     });
 
 })( jQuery );

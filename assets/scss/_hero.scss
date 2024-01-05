@@ -202,15 +202,15 @@
 
 
 .hero-content{
-	padding-top: 195px;
-	padding-bottom: 310px;
+	padding-top: 120px;
+	padding-bottom: 50px;
+	text-align: center;
 	@media #{$md} {
-		padding-bottom: 50px;
+		padding-bottom: 65px;
 		text-align: center;
 	}
-	@media #{$xs} {
-		padding-bottom: 30px;
-		text-align: center;
+	@media #{$lg} {
+		text-align: left;
 	}
 	& .title{
 		color: $white;

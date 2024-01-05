@@ -37,6 +37,7 @@ function en_contraste_fotografia_setup() {
 	 * @link https://developer.wordpress.org/reference/functions/add_image_size/
 	 */
 	add_image_size( 'about', 570, 670, true );
+	add_image_size( 'testimonial', 60, 60, true );
 	add_image_size( 'blog-grid', 320, 260, true );
 	add_image_size( 'services-grid', 385, 600, true );
 

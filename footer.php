@@ -76,7 +76,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="footer-copyright d-lg-flex justify-content-center justify-content-md-between site-info">
-						<p><?php echo _e( 'Derechos reservados', 'en-contraste-fotografia' ); ?> @<?php bloginfo( ); ?>
+						<p><?php echo _e( 'Derechos reservados', 'en-contraste-fotografia' ); ?> © <?php bloginfo( ); ?>
 							<?php
 								echo date_i18n(
 									/* translators: Copyright date format, see https://www.php.net/manual/datetime.format.php */

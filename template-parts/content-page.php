@@ -16,8 +16,8 @@
 
 	<!--====== SINGLE POST PART START ======-->
 
-	<section class="single-post-area pt-70">
-		<div id="entry-content" class="entry-content mt-30">
+	<section class="single-post-area">
+		<div id="entry-content" class="entry-content mt-0">
 			<?php
 			the_content();
 
