@@ -40,30 +40,31 @@
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-6">
 						<div class="footer-list mt-30 ml-95">
-							<h4 class="title">Quick links</h4>
-							<ul>
-								<li><a href="#">Creative</a></li>
-								<li><a href="#">General</a></li>
-								<li><a href="#">Insights</a></li>
-								<li><a href="#">Tech</a></li>
-							</ul>
+							<h4 class="title">Enlaces rápidos</h4>
+							<?php
+							wp_nav_menu( array(
+								'menu_id' => 'secondary-menu',
+								'theme_location' => 'secondary-menu',
+								'container' => 'nav',
+							) );
+							?>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-6">
 						<div class="footer-list mt-30">
-							<h4 class="title">Categories</h4>
-							<ul>
-								<li><a href="#">About us</a></li>
-								<li><a href="#">Terms and conditions</a></li>
-								<li><a href="#">Privacy policy</a></li>
-								<li><a href="#">News</a></li>
-								<li><a href="#">Contact us</a></li>
-							</ul>
+							<h4 class="title">Servicios</h4>
+							<?php
+							wp_nav_menu( array(
+								'menu_id' => 'tertiary-menu',
+								'theme_location' => 'tertiary-menu',
+								'container' => 'nav',
+							) );
+							?>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="footer-info mt-30">
-							<h3 class="title">Categories</h3>
+							<h3 class="title">Contacto</h3>
 							<ul>
 								<li><i class="fal fa-map-marker-alt"></i> 445 Main Street, New York CA-12325, USA </li>
 								<li><i class="fal fa-phone"></i> +00 125 456 888 </li>

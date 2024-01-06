@@ -68,6 +68,7 @@ function en_contraste_fotografia_setup() {
 		array(
 			'primary-menu'   => esc_html__( 'Primary', 'en-contraste-fotografia' ),
 			'secondary-menu' => esc_html__( 'Secondary', 'en-contraste-fotografia' ),
+			'tertiary-menu' => esc_html__( 'Tertiary', 'en-contraste-fotografia' ),
 		)
 	);
 
