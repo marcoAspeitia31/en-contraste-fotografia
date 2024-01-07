@@ -99,11 +99,28 @@
 	}
 
 	.nav-previous {
+		text-align: end;
 		flex: 1 0 50%;
+		order: 2;
+
+		a::after {
+			margin-left: 10px;
+			font-family: "Font Awesome 5 Pro";
+			font-weight: 400;
+			content: "\f061";
+		}
 	}
 
 	.nav-next {
-		text-align: end;
+		text-align: start;
 		flex: 1 0 50%;
+		order: 1;
+
+		a::before {
+			margin-right: 10px;
+			font-family: "Font Awesome 5 Pro";
+			font-weight: 400;
+			content: "\f060";
+		}
 	}
 }

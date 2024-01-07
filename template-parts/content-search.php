@@ -9,27 +9,36 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+<div class="col-md-6 col-sm-9">
+	<article class="article-2-item mt-30" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<div class="article-thumb">
+			<?php en_contraste_fotografia_post_thumbnail( 'blog-grid' ); ?>
+		</div>
+		<div class="article-content">
+			<div class="date">
+				<div class="item">
+					<p class="title"><?php echo esc_html( get_the_date( 'd' ) ); ?></p>
+					<span><?php echo esc_html( get_the_date( 'M' ) ); ?></span>
+					<span><?php echo esc_html( get_the_date( 'Y' ) ); ?></span>
+				</div>
+				<?php
+				$categories_list = get_the_category_list( esc_html__( ', ', 'en-contraste-fotografia' ) );
+				if ( $categories_list ) :
+					/* translators: 1: list of categories. */
+					printf( '<span class="cat-links"><i class="fas fa-hashtag mr-2"></i>' . esc_html__( '%1$s', 'en-contraste-fotografia' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				endif;
+				?>
+			</div>
+			<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<a href="<?php the_permalink(); ?>">
+				Ver más 
+				<span class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="10.196" height="12.663" viewBox="0 0 10.196 12.663">
+						<path data-name="Path 18155" d="M32.324,974.539,28.2,978.448a.731.731,0,0,0-.052.947.678.678,0,0,0,.948,0l3.027-2.864v9.346a.652.652,0,1,0,1.3,0v-9.346l3.027,2.864a.664.664,0,0,0,.948,0,.714.714,0,0,0-.052-.947l-4.126-3.909A.661.661,0,0,0,32.324,974.539Z" transform="translate(-27.676 -974.112)" fill="#fff" stroke="#fff" stroke-width="0.5"></path>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</article>
+</div><!-- #post-<?php the_ID(); ?> -->
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php
-			en_contraste_fotografia_posted_on();
-			en_contraste_fotografia_posted_by();
-			?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php en_contraste_fotografia_post_thumbnail(); ?>
-
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php en_contraste_fotografia_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->

@@ -7,6 +7,8 @@
  * @package En_contraste_fotografia
  */
 
+declare( strict_types = 1 );
+
 if ( ! function_exists( 'en_contraste_fotografia_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
@@ -56,21 +58,21 @@ if ( ! function_exists( 'en_contraste_fotografia_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
-	function en_contraste_fotografia_entry_footer() {
+	function en_contraste_fotografia_entry_footer( bool $is_footer ) {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list( esc_html__( ', ', 'en-contraste-fotografia' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'en-contraste-fotografia' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<span class="single-category-list" ><i class="fas fa-hashtag mr-2"></i>' . esc_html__( '%1$s', 'en-contraste-fotografia' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'en-contraste-fotografia' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'en-contraste-fotografia' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<span class="single-tag-list" ><i class="fas fa-tags mr-2"></i>' . esc_html__( '%1$s', 'en-contraste-fotografia' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 
@@ -93,22 +95,25 @@ if ( ! function_exists( 'en_contraste_fotografia_entry_footer' ) ) :
 			echo '</span>';
 		}
 
-		edit_post_link(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'en-contraste-fotografia' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
+		if ( $is_footer ) {
+			edit_post_link(
+				sprintf(
+					wp_kses(
+						/* translators: %s: Name of current post. Only visible to screen readers */
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'en-contraste-fotografia' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					),
+					wp_kses_post( get_the_title() )
 				),
-				wp_kses_post( get_the_title() )
-			),
-			'<span class="edit-link">',
-			'</span>'
-		);
+				'<span class="edit-link">',
+				'</span>'
+			);
+		}
+	
 	}
 endif;
 
@@ -119,7 +124,7 @@ if ( ! function_exists( 'en_contraste_fotografia_post_thumbnail' ) ) :
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 */
-	function en_contraste_fotografia_post_thumbnail() {
+	function en_contraste_fotografia_post_thumbnail( string $size = 'full' ) {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
 		}
@@ -127,16 +132,16 @@ if ( ! function_exists( 'en_contraste_fotografia_post_thumbnail' ) ) :
 		if ( is_singular() ) :
 			?>
 
-			<div class="post-thumbnail">
-				<?php the_post_thumbnail(); ?>
+			<div class="post-thumbnail my-3">
+				<?php the_post_thumbnail( $size ); ?>
 			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>
 
-			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1" aria-label="Ver contenido de <?php echo esc_attr( get_the_title() ); ?>">
 				<?php
 					the_post_thumbnail(
-						'post-thumbnail',
+						$size,
 						array(
 							'alt' => the_title_attribute(
 								array(
@@ -162,4 +167,25 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 	function wp_body_open() {
 		do_action( 'wp_body_open' );
 	}
+endif;
+
+if ( ! function_exists( 'en_contraste_fotografia_featured_image_bg' ) ) :
+
+	function en_contraste_fotografia_featured_image_bg( string $post_thumbnail_url = '' ) {
+
+		if ( $post_thumbnail_url ) :
+
+			?>
+			<style type="text/css">
+				.page-title-area .section__bg {
+					background-image: url('<?php echo esc_url( $post_thumbnail_url ); ?>');
+				}
+			</style>
+			<?php
+
+		endif;
+
+	}
+	add_action( 'wp_head', 'en_contraste_fotografia_featured_image_bg' );
+
 endif;
