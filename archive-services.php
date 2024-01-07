@@ -50,7 +50,7 @@ get_header();
 								<div class="service-item-wrap mb-5">
 									<div class="service-meta text-center">
 										<h2 class="title"><?php the_title(); ?></h2>
-										<a href="<?php the_permalink(); ?>" class="service-meta-link">Paquetes</a>
+										<a href="<?php the_permalink(); ?>" aria-label="Ver paquetes <?php echo esc_attr( the_title() ); ?>" class="service-meta-link">Paquetes</a>
 									</div>
 									<?php echo wp_get_attachment_image( get_post_meta( get_the_ID(), 'services_image_image_id', true ), 'services-grid', false, array( 'class' => 'service-img-grid' ) ); ?>
 								</div>

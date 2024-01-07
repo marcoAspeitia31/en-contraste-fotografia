@@ -19,7 +19,7 @@
 					<?php echo sprintf( __( '%s Resultados para: ', 'en-contraste-fotografia' ), $wp_query->found_posts ); echo get_search_query(); ?>
 					</h1>
 					<div class="scroll-to-down">
-						<a href="#entry-content"><i class="fal fa-arrow-down"></i></a>
+						<a href="#entry-content" aria-label="<?php echo esc_attr__( 'Ver los resultados', 'en-contraste-fotografia' ); ?>"><i class="fal fa-arrow-down"></i></a>
 					</div>
 				</div>
 			</div>

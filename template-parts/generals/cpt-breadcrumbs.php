@@ -22,13 +22,13 @@ $post_type = get_post_type_object( get_post_type( get_the_ID() ) );
 					<h1 class="title entry-title"><?php the_title(); ?></h1>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb justify-content-center">
-							<li class="breadcrumb-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inicio</a></li>
-							<li class="breadcrumb-item"><a href="<?php echo esc_url( get_post_type_archive_link( $post->post_type ) ); ?>"><?php echo esc_html( $post_type->labels->name ); ?></a></li>
+							<li class="breadcrumb-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php echo esc_attr__( 'Ir al home', 'en-contraste-fotografia' ); ?>">Inicio</a></li>
+							<li class="breadcrumb-item"><a href="<?php echo esc_url( get_post_type_archive_link( $post->post_type ) ); ?>" aria-label="Ir a <?php echo esc_attr( $post_type->labels->name ); ?>"><?php echo esc_html( $post_type->labels->name ); ?></a></li>
 							<li class="breadcrumb-item active" aria-current="page"><?php the_title(); ?></li>
 						</ol>
 					</nav>
 					<div class="scroll-to-down">
-						<a href="#entry-content"><i class="fal fa-arrow-down"></i></a>
+						<a href="#entry-content" aria-label="<?php echo esc_attr__( 'Ver el contenido', 'en-contraste-fotografia' ); ?>"><i class="fal fa-arrow-down"></i></a>
 					</div>
 				</div>
 			</div>

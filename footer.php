@@ -17,7 +17,7 @@
 				<div class="col-lg-12">
 					<div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
 						<div class="footer-logo">
-							<a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.png" alt=""></a>
+							<a href="<?php echo esc_url( home_url( '/' ) );?>" aria-label="<?php echo esc_attr__( 'Ir al home', 'en-contraste-fotografia' ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.png" alt=""></a>
 						</div>
 						<div class="footer-social">
 							<ul>
@@ -96,7 +96,7 @@
 
 	<!--====== BACK TO TOP START ======-->
 
-	<a class="back-to-top">
+	<a class="back-to-top" href="#" aria-label="Back to top">
 		<i class="fal fa-angle-up"></i>
 	</a>
 

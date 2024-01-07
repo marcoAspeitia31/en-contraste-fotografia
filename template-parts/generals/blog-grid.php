@@ -27,8 +27,8 @@
 				endif;
 				?>
 			</div>
-			<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-			<a href="<?php the_permalink(); ?>">
+			<h3 class="title"><a href="<?php the_permalink(); ?>" aria-label="Visitar <?php echo esc_attr( the_title() ); ?>"><?php the_title(); ?></a></h3>
+			<a href="<?php the_permalink(); ?>" aria-label="Ver más <?php echo esc_attr( the_title() ); ?>">
 				Ver más 
 				<span class="icon">
 					<svg xmlns="http://www.w3.org/2000/svg" width="10.196" height="12.663" viewBox="0 0 10.196 12.663">

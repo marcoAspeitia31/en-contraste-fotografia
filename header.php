@@ -61,7 +61,7 @@
 								?>
 
 								<div class="navbar-btn d-none d-sm-block">
-									<a class="main-btn" href="#">Get Started</a>
+									<a class="main-btn" href="#">Contactar</a>
 								</div>
 							</nav>
 						</div> <!-- navigation -->
