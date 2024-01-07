@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'en-contraste-fotografia' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#primary" aria-label="<?php echo esc_attr__( 'Skip to content', 'en-contraste-fotografia' ); ?>"><?php esc_html_e( 'Skip to content', 'en-contraste-fotografia' ); ?></a>
 
 	<!--====== HEADER PART START ======-->
 
@@ -35,7 +35,7 @@
 						<div class="navigation">
 							<nav class="navbar navbar-expand-lg navbar-light ">
 
-								<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.png" alt=""></a> <!-- logo -->
+								<a class="navbar-brand" aria-label="<?php echo esc_attr__( 'Logo del negocio', 'en-contraste-fotografia' ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.png" alt=""></a> <!-- logo -->
 
 								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 									<span class="toggler-icon"></span>
@@ -61,7 +61,7 @@
 								?>
 
 								<div class="navbar-btn d-none d-sm-block">
-									<a class="main-btn" href="#">Contactar</a>
+									<a class="main-btn" aria-label="<?php echo esc_attr__( 'Contactar', 'en-contraste-fotografia' ); ?>" href="#">Contactar</a>
 								</div>
 							</nav>
 						</div> <!-- navigation -->

@@ -28,13 +28,13 @@
 					<h1 class="title entry-title"><?php the_archive_title(); ?></h1>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb justify-content-center">
-							<li class="breadcrumb-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inicio</a></li>
-							<li class="breadcrumb-item"><a href="<?php echo esc_url( get_the_permalink( get_option( 'page_for_posts' ) ) ); ?>"><?php echo get_the_title( get_option( 'page_for_posts' ) ); ?></a></li>
+							<li class="breadcrumb-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php echo esc_attr__( 'Ir al home', 'en-contraste-fotografia' ); ?>">Inicio</a></li>
+							<li class="breadcrumb-item"><a href="<?php echo esc_url( get_the_permalink( get_option( 'page_for_posts' ) ) ); ?>" aria-label="Ir al <?php echo esc_attr( get_the_title( get_option( 'page_for_posts' ) ) ); ?>"><?php echo get_the_title( get_option( 'page_for_posts' ) ); ?></a></li>
 							<li class="breadcrumb-item active" aria-current="page"><?php the_archive_title(); ?></li>
 						</ol>
 					</nav>
 					<div class="scroll-to-down">
-						<a href="#entry-content"><i class="fal fa-arrow-down"></i></a>
+						<a href="#entry-content" aria-label="<?php echo esc_attr__( 'Ver el contenido', 'en-contraste-fotografia' ); ?>"><i class="fal fa-arrow-down"></i></a>
 					</div>
 				</div>
 			</div>

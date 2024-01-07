@@ -138,7 +138,7 @@ if ( ! function_exists( 'en_contraste_fotografia_post_thumbnail' ) ) :
 
 		<?php else : ?>
 
-			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1" aria-label="Ver contenido de <?php echo esc_attr( get_the_title() ); ?>">
 				<?php
 					the_post_thumbnail(
 						$size,
