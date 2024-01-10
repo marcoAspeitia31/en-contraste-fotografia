@@ -8,8 +8,10 @@
  *
  * @package En_contraste_fotografia
  */
-
+$theme_options = get_option('efp_theme_options');
 ?>
+    <!--The div element for the map -->
+    <div id="map"></div>
 	
 	<footer id="colophon" class="site-footer footer-area">
 		<div class="container">
@@ -17,7 +19,13 @@
 				<div class="col-lg-12">
 					<div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
 						<div class="footer-logo">
-							<a href="<?php echo esc_url( home_url( '/' ) );?>" aria-label="<?php echo esc_attr__( 'Ir al home', 'en-contraste-fotografia' ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.png" alt=""></a>
+							<a href="<?php echo esc_url( home_url( '/' ) );?>" aria-label="<?php echo esc_attr__( 'Ir al home', 'en-contraste-fotografia' ); ?>">
+							<?php
+							if( ! empty( $theme_options['footer_logo'] ) ) :
+								echo wp_get_attachment_image( $theme_options['footer_logo_id'], 'full', false, array( 'class' => 'img-fluid' ) );
+							endif;
+							?>
+							</a>
 						</div>
 						<div class="footer-social">
 							<ul>
@@ -66,9 +74,15 @@
 						<div class="footer-info mt-30">
 							<h3 class="title">Contacto</h3>
 							<ul>
-								<li><i class="fal fa-map-marker-alt"></i> 445 Main Street, New York CA-12325, USA </li>
-								<li><i class="fal fa-phone"></i> +00 125 456 888 </li>
-								<li><i class="fal fa-envelope"></i> contact@aball.com </li>
+								<li><i class="fal fa-map-marker-alt"></i>
+								<?php echo ! empty( $theme_options['business_address'] ) ? $theme_options['business_address'] : '' ; ?>
+								</li>
+								<li><i class="fal fa-phone"></i>
+								<?php echo ! empty( $theme_options['business_phone'] ) ? $theme_options['business_phone'] : '' ; ?>
+								</li>
+								<li><i class="fal fa-envelope"></i>
+								<?php echo ! empty( $theme_options['contact_email'] ) ? $theme_options['contact_email'] : '' ; ?>
+								</li>
 							</ul>
 						</div>
 					</div>
