@@ -178,9 +178,12 @@ function en_contraste_fotografia_scripts() {
 	wp_enqueue_script( 'wow', get_template_directory_uri() . '/assets/js/wow.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
 	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/assets/js/isotope.pkgd.min.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
 	wp_enqueue_script( 'imagesloaded', get_template_directory_uri() . '/assets/js/imagesloaded.pkgd.min.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
-	wp_enqueue_script( 'magnific-popup', get_template_directory_uri() . '/assets/js/magnific-popup.min.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
+	wp_enqueue_script( 'magnific-popup', get_template_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
 	wp_enqueue_script( 'main-scripts', get_template_directory_uri() . '/assets/js/main.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
 	wp_enqueue_script( 'en-contraste-fotografia-navigation', get_template_directory_uri() . '/js/navigation.js', array(), EN_CONTRASTE_FOTOGRAFIA_VERSION, true );
+	wp_localize_script( 'main-scripts', 'object', array(
+		'theme_options' => get_option( 'efp_theme_options' ),
+	) );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
