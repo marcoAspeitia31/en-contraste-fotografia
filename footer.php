@@ -22,7 +22,7 @@ $theme_options = get_option('efp_theme_options');
 							<a href="<?php echo esc_url( home_url( '/' ) );?>" aria-label="<?php echo esc_attr__( 'Ir al home', 'en-contraste-fotografia' ); ?>">
 							<?php
 							if( ! empty( $theme_options['footer_logo'] ) ) :
-								echo wp_get_attachment_image( $theme_options['footer_logo_id'], 'full', false, array( 'class' => 'img-fluid' ) );
+								echo wp_get_attachment_image( $theme_options['footer_logo_id'], 'logo', false, array( 'class' => 'img-fluid' ) );
 							endif;
 							?>
 							</a>

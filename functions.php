@@ -40,6 +40,7 @@ function en_contraste_fotografia_setup() {
 	add_image_size( 'testimonial', 60, 60, true );
 	add_image_size( 'blog-grid', 320, 260, true );
 	add_image_size( 'services-grid', 385, 600, true );
+	add_image_size( 'logo', 170, 45, true );
 
 	/*
 	* Enable support for Wide Alignment for Gutenberg blocks

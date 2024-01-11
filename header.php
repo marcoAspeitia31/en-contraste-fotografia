@@ -39,7 +39,7 @@
 								<?php
 								$theme_options = get_option('efp_theme_options');
 								if( ! empty( $theme_options['menu_logo'] ) ) :
-									echo wp_get_attachment_image( $theme_options['menu_logo_id'], 'full', false, array( 'class' => 'img-fluid' ) );
+									echo wp_get_attachment_image( $theme_options['menu_logo_id'], 'logo', false, array( 'class' => 'img-fluid' ) );
 								endif;
 								?>
 
