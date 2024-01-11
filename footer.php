@@ -29,10 +29,20 @@ $theme_options = get_option('efp_theme_options');
 						</div>
 						<div class="footer-social">
 							<ul>
-								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<?php
+								if ( $theme_options[ 'facebook_url' ] ) :
+									echo sprintf( '<li><a href="%s" target="_blank" aria-label="visitar perfil facebook"><i class="fab fa-facebook-f"></i></a></li>', esc_url( $theme_options[ 'facebook_url' ] ) );
+								endif;
+								if ( $theme_options[ 'instagram_url' ] ) :
+									echo sprintf( '<li><a href="%s" target="_blank" aria-label="visitar perfil instagram"><i class="fab fa-instagram"></i></a></li>', esc_url( $theme_options[ 'instagram_url' ] ) );
+								endif;
+								if ( $theme_options[ 'youtube_url' ] ) :
+									echo sprintf( '<li><a href="%s" target="_blank" aria-label="visitar perfil youtube"><i class="fab fa-youtube"></i></a></li>', esc_url( $theme_options[ 'youtube_url' ] ) );
+								endif;
+								if ( $theme_options[ 'tiktok_url' ] ) :
+									echo sprintf( '<li><a href="%s" target="_blank" aria-label="visitar perfil tiktok"><i class="fab fa-tiktok"></i></a></li>', esc_url( $theme_options[ 'tiktok_url' ] ) );
+								endif;
+								?>
 							</ul>
 						</div>
 					</div>
