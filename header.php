@@ -35,7 +35,13 @@
 						<div class="navigation">
 							<nav class="navbar navbar-expand-lg navbar-light ">
 
-								<a class="navbar-brand" aria-label="<?php echo esc_attr__( 'Logo del negocio', 'en-contraste-fotografia' ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.png" alt=""></a> <!-- logo -->
+								<a class="navbar-brand" aria-label="<?php echo esc_attr__( 'Logo del negocio', 'en-contraste-fotografia' ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+								<?php
+								$theme_options = get_option('efp_theme_options');
+								if( ! empty( $theme_options['menu_logo'] ) ) :
+									echo wp_get_attachment_image( $theme_options['menu_logo_id'], 'logo', false, array( 'class' => 'img-fluid' ) );
+								endif;
+								?>
 
 								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 									<span class="toggler-icon"></span>
